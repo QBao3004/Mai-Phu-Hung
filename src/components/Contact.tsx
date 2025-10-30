@@ -26,36 +26,36 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 bg-gray-50">
+    <section id="contact" className="py-8 sm:py-12 lg:py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-10 lg:mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#ca993b]">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 lg:mb-4 text-[#ca993b]">
             Liên hệ với Mai Phú Hưng
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto">
             Trở thành nhà phân phối & đại lý ngay hôm nay
           </p>
-          <div className="w-24 h-1 mt-4 rounded-full bg-gradient-to-r from-[#ca993b] to-[#b8883a] mx-auto"></div>
+          <div className="w-16 h-1 sm:w-20 lg:w-24 mt-3 sm:mt-4 rounded-full bg-gradient-to-r from-[#ca993b] to-[#b8883a] mx-auto"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 lg:items-start">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow min-h-[600px]"
+            className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 hover:shadow-xl transition-shadow min-h-[500px] lg:min-h-[600px]"
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="name" className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
                   Họ và tên <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -64,14 +64,14 @@ export default function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent text-sm sm:text-base"
                   placeholder="Nhập họ và tên"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="phone" className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
                   Số điện thoại <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -80,14 +80,14 @@ export default function Contact() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent text-sm sm:text-base"
                   placeholder="Nhập số điện thoại"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="email" className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
                   Email <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -96,14 +96,14 @@ export default function Contact() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent text-sm sm:text-base"
                   placeholder="Nhập địa chỉ email"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="businessModel" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="businessModel" className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
                   Mô hình kinh doanh <span className="text-red-500">*</span>
                 </label>
                 <select
@@ -111,7 +111,7 @@ export default function Contact() {
                   name="businessModel"
                   value={formData.businessModel}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#ca993b] bg-white cursor-pointer hover:border-gray-400 transition-colors"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#ca993b] bg-white cursor-pointer hover:border-gray-400 transition-colors text-sm sm:text-base"
                   required
                 >
                   <option value="">Chọn mô hình kinh doanh</option>
@@ -123,7 +123,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="message" className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
                   Lời nhắn
                 </label>
                 <textarea
@@ -131,8 +131,8 @@ export default function Contact() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  rows={4}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent resize-none"
+                  rows={3}
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent resize-none text-sm sm:text-base"
                   placeholder="Nhập lời nhắn của bạn"
                 />
               </div>
@@ -141,7 +141,7 @@ export default function Contact() {
                 whileHover={{ opacity: 0.9 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full bg-gradient-to-r from-[#ca993b] to-[#b8883a] text-white font-bold py-3 rounded-lg hover:opacity-90 transition-opacity flex justify-center items-center"
+                className="w-full bg-gradient-to-r from-[#ca993b] to-[#b8883a] text-white font-bold py-2 sm:py-3 rounded-lg hover:opacity-90 transition-opacity flex justify-center items-center text-sm sm:text-base"
               >
                 Gửi Tin Nhắn
               </motion.button>
@@ -156,7 +156,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="lg:sticky lg:top-32"
           >
-            <div className="bg-[#2e3b63] rounded-xl shadow-lg p-8 text-white h-full min-h-[600px]">
+            <div className="bg-[#2e3b63] rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 text-white h-full min-h-[500px] lg:min-h-[600px]">
               <div className="space-y-6">
                 {/* Phone */}
                 <div className="flex items-start">
@@ -204,7 +204,7 @@ export default function Contact() {
                 <h4 className="font-medium text-white mb-4">Theo dõi chúng tôi</h4>
                 <div className="flex gap-4">
                   <a
-                    href="https://www.facebook.com/profile.php?id=61574483563011"
+                    href="https://www.facebook.com/maiphuhungvn"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors"
@@ -214,17 +214,7 @@ export default function Contact() {
                     </svg>
                   </a>
                   <a
-                    href="https://www.instagram.com/maiphuhung.vn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors"
-                  >
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                    </svg>
-                  </a>
-                  <a
-                    href="https://www.youtube.com/@maiphuhung-vn"
+                    href="https://www.youtube.com/@congtytnhhmaiphuhung/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors"
@@ -237,8 +227,8 @@ export default function Contact() {
               </div>
 
               {/* Map */}
-              <div className="mt-8">
-                <div className="rounded-lg overflow-hidden border-2 border-white/20 h-[200px] w-full">
+              <div className="mt-6 lg:mt-8">
+                <div className="rounded-lg overflow-hidden border-2 border-white/20 h-[180px] sm:h-[200px] w-full">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2771.3067342279273!2d106.6338362241183!3d10.794488331183551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3d98c77d09%3A0x4649ab36813418e9!2zTWFpIFBow7ogSMawbmcgLSBIw6BuZyBUaMOhaSBDaMOtbmggSMOjbmc!5e0!3m2!1svi!2s!4v1745295658845!5m2!1svi!2s"
                     width="100%"

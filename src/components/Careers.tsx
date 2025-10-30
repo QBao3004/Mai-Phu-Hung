@@ -40,16 +40,16 @@ export default function Careers() {
   ];
 
   return (
-    <section id="careers" className="py-20 md:py-32 bg-white">
+    <section id="careers" className="py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-6 sm:mb-8 lg:mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#2e3b63]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 lg:mb-6 text-[#2e3b63] leading-tight">
             Tuyển Dụng
           </h2>
         </motion.div>
@@ -60,11 +60,11 @@ export default function Careers() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-3xl font-bold text-center mb-12 text-[#2e3b63]"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6 sm:mb-8 lg:mb-10 xl:mb-12 text-[#2e3b63] leading-snug"
           >
             Công ty TNHH Mai Phú Hưng tuyển dụng các vị trí
           </motion.h3>
-          <div className="space-y-4">
+          <div className="space-y-4 sm:space-y-6 lg:space-y-8">
             {positions.map((position, index) => (
               <motion.div
                 key={index}
@@ -73,35 +73,48 @@ export default function Careers() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.02 }}
-                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all border border-gray-200"
+                className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all border border-gray-200"
               >
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <h4 className="text-xl font-bold text-[#2e3b63]">{position.title}</h4>
-                      <span className="px-3 py-1 bg-[#2e3b63]/10 text-[#2e3b63] text-xs font-semibold rounded-full">
-                        {position.type}
-                      </span>
-                    </div>
-                    <div className="flex flex-wrap gap-4 text-sm text-gray-600 mb-3">
-                      <span className="flex items-center gap-1">
-                        🏢 {position.department}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        📍 {position.location}
-                      </span>
-                    </div>
-                    <p className="text-gray-600">{position.description}</p>
+                <div className="flex flex-col gap-4">
+                  {/* Header with title and badge */}
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-4">
+                    <h4 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#2e3b63] leading-tight">
+                      {position.title}
+                    </h4>
+                    <span className="px-3 py-1 bg-[#2e3b63]/10 text-[#2e3b63] text-xs font-semibold rounded-full self-start sm:self-center whitespace-nowrap">
+                      {position.type}
+                    </span>
                   </div>
-                  <Link href={`/tuyen-dung/${position.slug}`}>
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="px-6 py-3 bg-[#ca993b] text-white rounded-full font-semibold hover:shadow-lg transition-shadow whitespace-nowrap"
-                    >
-                      Xem thêm
-                    </motion.button>
-                  </Link>
+
+                  {/* Department and Location */}
+                  <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm text-gray-600">
+                    <span className="flex items-center gap-1.5">
+                      <span className="text-base">🏢</span>
+                      <span className="font-medium">{position.department}</span>
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <span className="text-base">📍</span>
+                      <span className="font-medium">{position.location}</span>
+                    </span>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                    {position.description}
+                  </p>
+
+                  {/* Button */}
+                  <div className="flex justify-start sm:justify-end pt-2">
+                    <Link href={`/tuyen-dung/${position.slug}`}>
+                      <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 bg-[#ca993b] text-white rounded-full font-semibold hover:shadow-lg transition-all text-sm sm:text-base whitespace-nowrap"
+                      >
+                        Xem thêm
+                      </motion.button>
+                    </Link>
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -113,15 +126,15 @@ export default function Careers() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-12 text-center"
+            className="mt-6 sm:mt-8 lg:mt-10 xl:mt-12 text-center"
           >
             <Link href="/tuyen-dung">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 bg-[#2e3b63] text-white rounded-full font-semibold text-lg hover:bg-[#1f2a45] transition-colors shadow-lg hover:shadow-xl"
+                className="px-8 sm:px-10 lg:px-12 py-3 sm:py-3.5 lg:py-4 bg-[#2e3b63] text-white rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:bg-[#1f2a45] transition-all shadow-lg hover:shadow-xl"
               >
-                Xem thêm
+                Xem thêm các vị trí
               </motion.button>
             </Link>
           </motion.div>

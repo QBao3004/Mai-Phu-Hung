@@ -122,7 +122,7 @@ export default function BlogPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-[#2e3b63] to-[#1f2a45]">
+      <section className="pt-24 md:pt-32 pb-12 md:pb-16 bg-gradient-to-br from-[#2e3b63] to-[#1f2a45]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -130,10 +130,10 @@ export default function BlogPage() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
               Tin Tức & Bài Viết
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-2 md:px-0">
               Cập nhật những tin tức mới nhất, xu hướng công nghệ và kiến thức hữu ích từ Mai Phú Hưng
             </p>
           </motion.div>
@@ -141,16 +141,16 @@ export default function BlogPage() {
       </section>
 
       {/* Category Filter */}
-      <section className="py-8 bg-white shadow-sm sticky top-16 z-40">
+      <section className="py-6 md:py-8 bg-white shadow-sm sticky top-16 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-3">
             {categories.map((category) => (
               <motion.button
                 key={category}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-2 rounded-full font-medium transition-all ${
+                className={`px-4 py-2 md:px-6 md:py-2 rounded-full text-sm md:text-base font-medium transition-all ${
                   selectedCategory === category
                     ? 'bg-[#ca993b] text-white shadow-lg'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -164,13 +164,13 @@ export default function BlogPage() {
       </section>
 
       {/* Blog Grid */}
-      <section className="py-16">
+      <section className="py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
           >
             {filteredBlogs.map((blog, index) => (
               <motion.article
@@ -182,34 +182,34 @@ export default function BlogPage() {
                 className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all overflow-hidden border border-gray-100 cursor-pointer h-full"
               >
                 <Link href={`/tin-tuc/${blog.slug}`} className="h-full">
-                  <div className="p-6 flex flex-col h-full">
-                    <div className="flex items-center justify-center w-full h-48 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl mb-4">
-                      <span className="text-8xl">{blog.image}</span>
+                  <div className="p-4 md:p-6 flex flex-col h-full">
+                    <div className="flex items-center justify-center w-full h-32 md:h-48 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl mb-3 md:mb-4">
+                      <span className="text-6xl md:text-8xl">{blog.image}</span>
                     </div>
-                    
-                    <div className="mb-3">
-                      <span className="px-3 py-1 bg-[#ca993b]/10 text-[#ca993b] text-xs font-semibold rounded-full">
+
+                    <div className="mb-2 md:mb-3">
+                      <span className="px-2 md:px-3 py-1 bg-[#ca993b]/10 text-[#ca993b] text-xs font-semibold rounded-full">
                         {blog.category}
                       </span>
                     </div>
 
-                    <h3 className="text-xl font-bold mb-3 hover:text-[#ca993b] transition-colors line-clamp-2">
+                    <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 hover:text-[#ca993b] transition-colors overflow-hidden text-ellipsis" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
                       {blog.title}
                     </h3>
-                    
-                    <p className="text-gray-600 mb-6 line-clamp-3">
+
+                    <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base overflow-hidden text-ellipsis" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}>
                       {blog.excerpt}
                     </p>
 
-                    <div className="flex items-center justify-between border-t border-gray-100 pt-4 mt-auto">
-                      <div className="text-sm text-gray-500">
+                    <div className="flex items-center justify-between border-t border-gray-100 pt-3 md:pt-4 mt-auto">
+                      <div className="text-xs md:text-sm text-gray-500">
                         <div className="font-medium text-gray-700">{blog.author}</div>
                         <div className="text-xs">{blog.date}</div>
                       </div>
                       <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="px-4 py-2 bg-[#ca993b] text-white rounded-full text-sm font-medium hover:shadow-lg transition-shadow"
+                        className="px-3 md:px-4 py-2 bg-[#ca993b] text-white rounded-full text-xs md:text-sm font-medium hover:shadow-lg transition-shadow"
                       >
                         Đọc tiếp
                       </motion.button>
@@ -224,9 +224,9 @@ export default function BlogPage() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="text-center py-16"
+              className="text-center py-12 md:py-16"
             >
-              <p className="text-xl text-gray-500">Không tìm thấy bài viết nào trong danh mục này.</p>
+              <p className="text-lg md:text-xl text-gray-500">Không tìm thấy bài viết nào trong danh mục này.</p>
             </motion.div>
           )}
         </div>

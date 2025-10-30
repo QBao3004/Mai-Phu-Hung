@@ -22,8 +22,8 @@ export default function ZaloChatWidget({ isOpen, onClose, zaloLink }: ZaloChatWi
   };
 
   return (
-    <div className="fixed bottom-64 right-10 z-50 animate-in slide-in-from-bottom-5 duration-300">
-      <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-80 md:w-96">
+    <div className="fixed bottom-64 right-4 sm:right-10 z-50 animate-in slide-in-from-bottom-5 duration-300">
+      <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-72 sm:w-80 md:w-96 max-w-[calc(100vw-2rem)]">
         {/* Header */}
         <div className="bg-gradient-to-r from-blue-600 to-blue-500 p-4">
           <div className="flex items-center justify-between">

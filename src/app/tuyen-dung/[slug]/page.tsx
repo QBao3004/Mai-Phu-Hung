@@ -205,38 +205,38 @@ export default function JobDetailPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative w-full bg-gradient-to-r from-[#2e3b63] to-[#1f2a45] pt-24 md:pt-32 pb-12 md:pb-16">
+      <section className="relative w-full bg-gradient-to-r from-[#2e3b63] to-[#1f2a45] pt-20 sm:pt-24 md:pt-32 pb-8 sm:pb-12 md:pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <Link href="/tuyen-dung" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <Link href="/tuyen-dung" className="inline-flex items-center text-white/80 hover:text-white mb-4 sm:mb-6 transition-colors text-sm sm:text-base">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
               Quay lại
             </Link>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight">
               {position.title}
             </h1>
-            <div className="flex flex-wrap gap-4 text-white/90">
-              <span className="flex items-center gap-2">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:gap-4 text-white/90">
+              <span className="flex items-center gap-2 text-sm sm:text-base">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 {position.department}
               </span>
-              <span className="flex items-center gap-2">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span className="flex items-center gap-2 text-sm sm:text-base">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 {position.location}
               </span>
-              <span className="flex items-center gap-2">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span className="flex items-center gap-2 text-sm sm:text-base">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 {position.type}
@@ -247,9 +247,9 @@ export default function JobDetailPage() {
       </section>
 
       {/* Job Details Section */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Main Content */}
             <div className="lg:col-span-2 space-y-8">
               {/* Overview */}
@@ -257,10 +257,10 @@ export default function JobDetailPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="bg-white rounded-xl shadow-lg p-8"
+                className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8"
               >
-                <h2 className="text-2xl font-bold text-[#2e3b63] mb-4">Tổng Quan</h2>
-                <div className="space-y-3 text-gray-700">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#2e3b63] mb-3 sm:mb-4">Tổng Quan</h2>
+                <div className="space-y-2 sm:space-y-3 text-gray-700 text-sm sm:text-base">
                   <p><strong>Thời gian làm việc:</strong> {position.workingHours}</p>
                   {position.products && <p><strong>Sản phẩm kinh doanh:</strong> {position.products}</p>}
                   {position.trialPeriod && <p><strong>Thời gian thử việc:</strong> {position.trialPeriod}</p>}
@@ -274,13 +274,13 @@ export default function JobDetailPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="bg-white rounded-xl shadow-lg p-8"
+                className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8"
               >
-                <h2 className="text-2xl font-bold text-[#2e3b63] mb-4">Mô Tả Công Việc</h2>
-                <p className="text-gray-700 text-lg leading-relaxed mb-6">{position.description}</p>
-                <ul className="space-y-3">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#2e3b63] mb-3 sm:mb-4">Mô Tả Công Việc</h2>
+                <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">{position.description}</p>
+                <ul className="space-y-2 sm:space-y-3">
                   {position.responsibilities.map((resp, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-gray-700">
+                    <li key={idx} className="flex items-start gap-3 text-gray-700 text-sm sm:text-base">
                       <span className="text-[#ca993b] mt-1 flex-shrink-0">•</span>
                       <span>{resp}</span>
                     </li>
@@ -294,13 +294,13 @@ export default function JobDetailPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="bg-white rounded-xl shadow-lg p-8"
+                  className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8"
                 >
-                  <h2 className="text-2xl font-bold text-[#2e3b63] mb-4">Thu Nhập Chi Tiết</h2>
-                  <p className="text-lg font-semibold text-[#ca993b] mb-4">{position.salary}</p>
-                  <ul className="space-y-3">
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#2e3b63] mb-3 sm:mb-4">Thu Nhập Chi Tiết</h2>
+                  <p className="text-base sm:text-lg font-semibold text-[#ca993b] mb-3 sm:mb-4">{position.salary}</p>
+                  <ul className="space-y-2 sm:space-y-3">
                     {position.salaryDetails.map((detail, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-gray-700">
+                      <li key={idx} className="flex items-start gap-3 text-gray-700 text-sm sm:text-base">
                         <span className="text-[#ca993b] mt-1 flex-shrink-0">✓</span>
                         <span>{detail}</span>
                       </li>
@@ -314,12 +314,12 @@ export default function JobDetailPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="bg-white rounded-xl shadow-lg p-8"
+                className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8"
               >
-                <h2 className="text-2xl font-bold text-[#2e3b63] mb-4">Yêu Cầu</h2>
-                <ul className="space-y-3">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#2e3b63] mb-3 sm:mb-4">Yêu Cầu</h2>
+                <ul className="space-y-2 sm:space-y-3">
                   {position.requirements.map((req, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-gray-700">
+                    <li key={idx} className="flex items-start gap-3 text-gray-700 text-sm sm:text-base">
                       <span className="text-[#ca993b] mt-1 flex-shrink-0">✓</span>
                       <span>{req}</span>
                     </li>
@@ -332,12 +332,12 @@ export default function JobDetailPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="bg-white rounded-xl shadow-lg p-8"
+                className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8"
               >
-                <h2 className="text-2xl font-bold text-[#2e3b63] mb-4">Quyền Lợi</h2>
-                <ul className="space-y-3">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#2e3b63] mb-3 sm:mb-4">Quyền Lợi</h2>
+                <ul className="space-y-2 sm:space-y-3">
                   {position.benefits.map((benefit, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-gray-700">
+                    <li key={idx} className="flex items-start gap-3 text-gray-700 text-sm sm:text-base">
                       <span className="text-[#ca993b] mt-1 flex-shrink-0">✓</span>
                       <span>{benefit}</span>
                     </li>
@@ -347,27 +347,27 @@ export default function JobDetailPage() {
             </div>
 
             {/* Sidebar - Contact Info */}
-            <div className="lg:col-span-1">
+            <div className="lg:col-span-1 mt-8 lg:mt-0">
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
-                className="bg-[#2e3b63] rounded-xl shadow-lg p-8 text-white sticky top-24"
+                className="bg-[#2e3b63] rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 text-white lg:sticky lg:top-24"
               >
-                <h2 className="text-2xl font-bold mb-4">Cách Thức Ứng Tuyển</h2>
-                <p className="text-white/90 mb-6 leading-relaxed">
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4">Cách Thức Ứng Tuyển</h2>
+                <p className="text-white/90 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                   Gửi hồ sơ ứng tuyển của bạn qua email hoặc liên hệ trực tiếp với chúng tôi để được tư vấn chi tiết.
                 </p>
 
                 {/* Email Application */}
-                <div className="mb-8">
-                  <h3 className="font-bold mb-3 text-lg">Gửi Email Ứng Tuyển</h3>
-                  <a 
+                <div className="mb-6 sm:mb-8">
+                  <h3 className="font-bold mb-2 sm:mb-3 text-base sm:text-lg">Gửi Email Ứng Tuyển</h3>
+                  <a
                     href={`mailto:maiphuhung79@gmail.com?subject=Ứng tuyển vị trí: ${position.title}&body=Kính gửi Ban Tuyển Dụng Mai Phú Hưng,%0D%0A%0D%0ATôi xin gửi đến Quý Công ty hồ sơ ứng tuyển vị trí: ${position.title}%0D%0A%0D%0AThông tin cá nhân:%0D%0AHọ và tên: %0D%0ASố điện thoại: %0D%0AEmail: %0D%0A%0D%0AKinh nghiệm và giới thiệu bản thân:%0D%0A[Vui lòng điền thông tin của bạn ở đây]%0D%0A%0D%0ATrân trọng.`}
-                    className="block w-full bg-[#ca993b] hover:bg-[#b8883a] text-white font-bold py-4 rounded-lg transition-colors text-center"
+                    className="block w-full bg-[#ca993b] hover:bg-[#b8883a] text-white font-bold py-3 sm:py-4 rounded-lg transition-colors text-center text-sm sm:text-base"
                   >
                     <span className="flex items-center justify-center gap-2">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                       Gửi Email Ứng Tuyển
@@ -376,31 +376,31 @@ export default function JobDetailPage() {
                 </div>
 
                 {/* Contact Info */}
-                <div className="pt-6 border-t border-white/20">
-                  <h3 className="font-bold mb-4 text-lg">Liên Hệ Trực Tiếp</h3>
-                  <div className="space-y-4">
+                <div className="pt-4 sm:pt-6 border-t border-white/20">
+                  <h3 className="font-bold mb-3 sm:mb-4 text-base sm:text-lg">Liên Hệ Trực Tiếp</h3>
+                  <div className="space-y-3 sm:space-y-4">
                     <div>
-                      <p className="text-white/70 text-sm mb-1">Số điện thoại</p>
-                      <a href="tel:0798868886" className="flex items-center gap-2 text-white hover:text-[#ca993b] transition-colors font-semibold">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <p className="text-white/70 text-xs sm:text-sm mb-1">Số điện thoại</p>
+                      <a href="tel:0798868886" className="flex items-center gap-2 text-white hover:text-[#ca993b] transition-colors font-semibold text-sm sm:text-base">
+                        <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
                         079.886.8886
                       </a>
                     </div>
                     <div>
-                      <p className="text-white/70 text-sm mb-1">Email</p>
-                      <a href="mailto:maiphuhung79@gmail.com" className="flex items-start gap-2 text-white hover:text-[#ca993b] transition-colors font-semibold break-all">
-                        <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <p className="text-white/70 text-xs sm:text-sm mb-1">Email</p>
+                      <a href="mailto:maiphuhung79@gmail.com" className="flex items-start gap-2 text-white hover:text-[#ca993b] transition-colors font-semibold break-all text-sm sm:text-base">
+                        <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
                         maiphuhung79@gmail.com
                       </a>
                     </div>
                     <div>
-                      <p className="text-white/70 text-sm mb-1">Địa chỉ</p>
-                      <p className="text-white flex items-start gap-2">
-                        <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <p className="text-white/70 text-xs sm:text-sm mb-1">Địa chỉ</p>
+                      <p className="text-white flex items-start gap-2 text-sm sm:text-base">
+                        <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>

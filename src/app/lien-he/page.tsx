@@ -32,14 +32,14 @@ export default function LienHePage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative w-full h-[50vh] md:h-[30vh] bg-gray-50 pt-16 md:pt-20">
-        <div className="absolute inset-0 flex items-center justify-center pt-16 md:pt-20">
-          <div className="text-center px-4">
+      <section className="relative w-full h-[30vh] sm:h-[45vh] md:h-[30vh] bg-gray-50 pt-16 md:pt-20">
+        <div className="absolute inset-0 flex items-center justify-center pt-12 sm:pt-14 md:pt-16 lg:pt-20">
+          <div className="text-center px-4 sm:px-6">
             <motion.h1
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-4xl md:text-6xl font-bold text-[#2e3b63] mb-4"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#2e3b63] mb-3 sm:mb-4"
             >
               Liên Hệ Với Chúng Tôi
             </motion.h1>
@@ -47,7 +47,7 @@ export default function LienHePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto"
+              className="text-base sm:text-lg md:text-xl text-gray-700 max-w-2xl mx-auto px-2 md:px-0"
             >
               Trở thành nhà phân phối & đại lý của Mai Phú Hưng ngay hôm nay
             </motion.p>
@@ -56,20 +56,20 @@ export default function LienHePage() {
       </section>
 
       {/* Contact Section */}
-      <section className="pt-4 pb-16 md:pt-5 md:pb-20 bg-gray-50">
+      <section className="pt-0 pb-12 sm:pt-8 sm:pb-16 md:pt-12 md:pb-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 lg:items-start">
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow min-h-[600px]"
+              className="bg-white rounded-xl shadow-lg p-6 sm:p-8 hover:shadow-xl transition-shadow min-h-[500px] sm:min-h-[550px] lg:min-h-[600px]"
             >
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5 lg:space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     Họ và tên <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -78,14 +78,14 @@ export default function LienHePage() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent"
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent text-sm sm:text-base"
                     placeholder="Nhập họ và tên"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     Số điện thoại <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -94,14 +94,14 @@ export default function LienHePage() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent"
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent text-sm sm:text-base"
                     placeholder="Nhập số điện thoại"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     Email <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -110,14 +110,14 @@ export default function LienHePage() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent"
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent text-sm sm:text-base"
                     placeholder="Nhập địa chỉ email"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="businessModel" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="businessModel" className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     Mô hình kinh doanh <span className="text-red-500">*</span>
                   </label>
                   <select
@@ -125,7 +125,7 @@ export default function LienHePage() {
                     name="businessModel"
                     value={formData.businessModel}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#ca993b] bg-white cursor-pointer hover:border-gray-400 transition-colors"
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#ca993b] bg-white cursor-pointer hover:border-gray-400 transition-colors text-sm sm:text-base"
                     required
                   >
                     <option value="">Chọn mô hình kinh doanh</option>
@@ -137,7 +137,7 @@ export default function LienHePage() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     Lời nhắn
                   </label>
                   <textarea
@@ -145,8 +145,8 @@ export default function LienHePage() {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent resize-none"
+                    rows={3}
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ca993b] focus:border-transparent resize-none text-sm sm:text-base"
                     placeholder="Nhập lời nhắn của bạn"
                   />
                 </div>
@@ -155,7 +155,7 @@ export default function LienHePage() {
                   whileHover={{ opacity: 0.9 }}
                   whileTap={{ scale: 0.98 }}
                   type="submit"
-                  className="w-full bg-gradient-to-r from-[#ca993b] to-[#b8883a] text-white font-bold py-3 rounded-lg hover:opacity-90 transition-opacity flex justify-center items-center"
+                  className="w-full bg-gradient-to-r from-[#ca993b] to-[#b8883a] text-white font-bold py-3 sm:py-3.5 rounded-lg hover:opacity-90 transition-opacity flex justify-center items-center text-sm sm:text-base"
                 >
                   Gửi Tin Nhắn
                 </motion.button>
@@ -170,45 +170,45 @@ export default function LienHePage() {
               transition={{ duration: 0.6 }}
               className="lg:sticky lg:top-32"
             >
-              <div className="bg-[#2e3b63] rounded-xl shadow-lg p-8 text-white h-full min-h-[600px]">
-                <div className="space-y-6">
+              <div className="bg-[#2e3b63] rounded-xl shadow-lg p-6 sm:p-8 text-white h-full min-h-[450px] sm:min-h-[500px] lg:min-h-[600px]">
+                <div className="space-y-4 sm:space-y-5 lg:space-y-6">
                   {/* Phone */}
                   <div className="flex items-start">
-                    <div className="bg-white/20 p-2 rounded-full flex-shrink-0 mt-1">
-                      <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="bg-white/20 p-1.5 sm:p-2 rounded-full flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                     </div>
-                    <div className="ml-4">
-                      <h4 className="font-medium text-white">Điện Thoại</h4>
-                      <p className="text-white/80 text-sm">079.886.8886</p>
+                    <div className="ml-3 sm:ml-4">
+                      <h4 className="font-medium text-white text-sm sm:text-base">Điện Thoại</h4>
+                      <p className="text-white/80 text-xs sm:text-sm">079.886.8886</p>
                     </div>
                   </div>
 
                   {/* Email */}
                   <div className="flex items-start">
-                    <div className="bg-white/20 p-2 rounded-full flex-shrink-0 mt-1">
-                      <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="bg-white/20 p-1.5 sm:p-2 rounded-full flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </div>
-                    <div className="ml-4">
-                      <h4 className="font-medium text-white">Email</h4>
-                      <p className="text-white/80 text-sm">maiphuhung79@gmail.com</p>
+                    <div className="ml-3 sm:ml-4">
+                      <h4 className="font-medium text-white text-sm sm:text-base">Email</h4>
+                      <p className="text-white/80 text-xs sm:text-sm break-words">maiphuhung79@gmail.com</p>
                     </div>
                   </div>
 
                   {/* Address */}
                   <div className="flex items-start">
-                    <div className="bg-white/20 p-2 rounded-full flex-shrink-0 mt-1">
-                      <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="bg-white/20 p-1.5 sm:p-2 rounded-full flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
                     </div>
-                    <div className="ml-4">
-                      <h4 className="font-medium text-white">Địa Chỉ</h4>
-                      <p className="text-white/80 text-sm">31 Dân Tộc, P. Tân Sơn Nhì, TP. Hồ Chí Minh</p>
+                    <div className="ml-3 sm:ml-4">
+                      <h4 className="font-medium text-white text-sm sm:text-base">Địa Chỉ</h4>
+                      <p className="text-white/80 text-xs sm:text-sm break-words">31 Dân Tộc, P. Tân Sơn Nhì, TP. Hồ Chí Minh</p>
                     </div>
                   </div>
                 </div>

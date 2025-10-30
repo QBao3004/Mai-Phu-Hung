@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function TuyenDungPage() {
 
@@ -15,11 +16,6 @@ export default function TuyenDungPage() {
       location: 'TP. Hồ Chí Minh',
       type: 'Toàn thời gian',
       description: 'Với công việc hành chính – hỗ trợ nghiệp vụ ổn định và nhiều cơ hội phát triển. Ứng tuyển ngay hôm nay để gia nhập môi trường làm việc chuyên nghiệp, phúc lợi hấp dẫn!',
-      icon: (
-        <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      ),
     },
     {
       slug: 'sale-admin',
@@ -28,11 +24,6 @@ export default function TuyenDungPage() {
       location: 'TP. Hồ Chí Minh',
       type: 'Toàn thời gian',
       description: 'Với nhiệm vụ hỗ trợ kinh doanh, quản lý dữ liệu và chăm sóc khách hàng. Ứng tuyển ngay hôm nay để phát triển sự nghiệp trong môi trường chuyên nghiệp, đãi ngộ tốt!',
-      icon: (
-        <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-        </svg>
-      ),
     },
     {
       slug: 'thu-kho',
@@ -41,11 +32,6 @@ export default function TuyenDungPage() {
       location: 'TP. Hồ Chí Minh',
       type: 'Toàn thời gian',
       description: 'Với công việc quản lý xuất nhập hàng và sắp xếp kho bãi gọn gàng, chính xác. Ứng tuyển ngay hôm nay để ổn định sự nghiệp trong môi trường chuyên nghiệp, phúc lợi tốt!',
-      icon: (
-        <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-        </svg>
-      ),
     },
     {
       slug: 'nhan-vien-kho-van',
@@ -54,11 +40,6 @@ export default function TuyenDungPage() {
       location: 'TP. Hồ Chí Minh',
       type: 'Toàn thời gian',
       description: 'Với công việc hỗ trợ xuất nhập hàng, vận chuyển và kiểm soát hàng hóa chính xác. Ứng tuyển ngay hôm nay để gia nhập môi trường ổn định, phúc lợi hấp dẫn!',
-      icon: (
-        <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-        </svg>
-      ),
     },
   ];
 
@@ -106,14 +87,14 @@ export default function TuyenDungPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative w-full h-[50vh] md:h-[30vh] bg-gradient-to-r from-[#2e3b63] to-[#1f2a45] pt-16 md:pt-20">
-        <div className="absolute inset-0 flex items-center justify-center pt-16 md:pt-20">
-          <div className="text-center px-4">
+      <section className="relative w-full h-[30vh] sm:h-[30vh] md:h-[30vh] lg:h-[30vh] bg-gradient-to-r from-[#2e3b63] to-[#1f2a45] pt-20 sm:pt-16 md:pt-20">
+        <div className="absolute inset-0 flex items-center justify-center pt-20 sm:pt-16 md:pt-20">
+          <div className="text-center px-4 sm:px-6 lg:px-8">
             <motion.h1
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-4xl md:text-6xl font-bold text-white mb-4"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 sm:mb-4 lg:mb-6 leading-tight"
             >
               Cơ Hội Nghề Nghiệp
             </motion.h1>
@@ -121,7 +102,7 @@ export default function TuyenDungPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-2xl mx-auto leading-relaxed"
             >
               Gia nhập đội ngũ Mai Phú Hưng - Nơi tài năng được phát triển
             </motion.p>
@@ -130,24 +111,24 @@ export default function TuyenDungPage() {
       </section>
 
       {/* Why Join Us Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-12 lg:mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#2e3b63]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 lg:mb-6 text-[#2e3b63] leading-tight">
               Tại Sao Chọn Mai Phú Hưng?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2">
               Chúng tôi cam kết tạo môi trường làm việc tốt nhất cho đội ngũ nhân viên
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
             {whyJoinUs.map((item, index) => (
               <motion.div
                 key={index}
@@ -156,13 +137,17 @@ export default function TuyenDungPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -10 }}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all flex flex-col items-center justify-center text-center"
+                className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all flex flex-col items-center justify-center text-center"
               >
-                <div className="text-[#ca993b] mb-4 flex justify-center">{item.icon}</div>
-                <h3 className="text-base font-bold text-[#2e3b63] mb-3 whitespace-nowrap">
+                <div className="text-[#ca993b] mb-3 sm:mb-4 flex justify-center">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12">
+                    {item.icon}
+                  </div>
+                </div>
+                <h3 className="text-sm sm:text-base lg:text-base font-bold text-[#2e3b63] mb-2 sm:mb-3 leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
                   {item.description}
                 </p>
               </motion.div>
@@ -172,24 +157,24 @@ export default function TuyenDungPage() {
       </section>
 
       {/* Open Positions Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-12 lg:mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#2e3b63]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 lg:mb-6 text-[#2e3b63] leading-tight">
               Vị Trí Đang Tuyển Dụng
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2">
               Khám phá các cơ hội nghề nghiệp phù hợp với bạn
             </p>
           </motion.div>
 
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6 lg:space-y-8">
             {positions.map((position, index) => (
               <motion.div
                 key={index}
@@ -199,32 +184,38 @@ export default function TuyenDungPage() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white border border-gray-200 rounded-xl shadow-lg hover:shadow-2xl transition-all overflow-hidden"
               >
-                <div className="flex flex-col md:flex-row items-center gap-6 p-6">
+                <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6 p-4 sm:p-6 lg:p-8">
                   {/* Icon/Image Section */}
-                  <div className="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-[#2e3b63] to-[#1f2a45] rounded-xl flex items-center justify-center text-[#ca993b]">
-                    {position.icon}
+                  <div className="flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-xl overflow-hidden">
+                    <Image
+                      src="/hero.jpg"
+                      alt="Job position"
+                      width={112}
+                      height={112}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
 
                   {/* Content Section */}
-                  <div className="flex-1 text-center md:text-left min-h-[120px] flex flex-col justify-center">
-                    <h3 className="text-2xl font-bold text-[#2e3b63] mb-2">
+                  <div className="flex-1 text-center lg:text-left flex flex-col justify-center min-h-0 lg:min-h-[120px]">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#2e3b63] mb-1 sm:mb-2 leading-tight">
                       {position.title}
                     </h3>
-                    <p className="text-gray-600 text-sm mb-2">
+                    <p className="text-gray-600 text-xs sm:text-sm lg:text-sm mb-2 sm:mb-3 font-medium">
                       {position.department} • {position.location}
                     </p>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                       {position.description}
                     </p>
                   </div>
 
                   {/* Button Section */}
-                  <div className="flex-shrink-0 w-full md:w-auto">
+                  <div className="flex-shrink-0 w-full sm:w-auto mt-2 sm:mt-0">
                     <Link href={`/tuyen-dung/${position.slug}`}>
                       <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="w-full md:w-auto px-8 py-3 bg-[#ca993b] text-white rounded-lg font-semibold hover:shadow-lg transition-shadow whitespace-nowrap"
+                        className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 bg-[#ca993b] text-white rounded-lg font-semibold hover:shadow-lg transition-all text-sm sm:text-base whitespace-nowrap"
                       >
                         Xem chi tiết
                       </motion.button>

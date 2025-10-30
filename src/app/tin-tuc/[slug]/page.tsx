@@ -163,11 +163,11 @@ export default function BlogPost() {
     return (
       <div className="min-h-screen bg-gray-50">
         <Navigation />
-        <div className="pt-32 pb-16">
+        <div className="pt-24 md:pt-32 pb-12 md:pb-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl font-bold mb-4">Bài viết không tồn tại</h1>
-            <p className="text-gray-600 mb-8">Bài viết bạn đang tìm kiếm không có sẵn.</p>
-            <Link href="/tin-tuc" className="px-6 py-3 bg-[#ca993b] text-white rounded-full font-semibold hover:shadow-lg transition-shadow inline-block">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">Bài viết không tồn tại</h1>
+            <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8">Bài viết bạn đang tìm kiếm không có sẵn.</p>
+            <Link href="/tin-tuc" className="px-4 md:px-6 py-2 md:py-3 bg-[#ca993b] text-white rounded-full font-semibold hover:shadow-lg transition-shadow inline-block text-sm md:text-base">
               Quay lại trang Tin Tức
             </Link>
           </div>
@@ -185,7 +185,7 @@ export default function BlogPost() {
       <Navigation />
       
       {/* Article Header */}
-      <article className="pt-32 pb-16">
+      <article className="pt-24 md:pt-32 pb-12 md:pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -193,62 +193,62 @@ export default function BlogPost() {
             transition={{ duration: 0.6 }}
           >
             {/* Breadcrumb */}
-            <div className="flex items-center text-sm text-gray-500 mb-6">
-              <Link href="/" className="hover:text-[#ca993b]">Trang Chủ</Link>
-              <span className="mx-2">/</span>
-              <Link href="/tin-tuc" className="hover:text-[#ca993b]">Tin Tức</Link>
-              <span className="mx-2">/</span>
-              <span className="text-gray-700">{blog.title}</span>
+            <div className="flex items-center text-xs sm:text-sm md:text-base text-gray-500 mb-3 sm:mb-4 md:mb-6 px-2 md:px-0">
+              <Link href="/" className="hover:text-[#ca993b] transition-colors">Trang Chủ</Link>
+              <span className="mx-1 sm:mx-1.5 md:mx-2 text-gray-400">/</span>
+              <Link href="/tin-tuc" className="hover:text-[#ca993b] transition-colors">Tin Tức</Link>
+              <span className="mx-1 sm:mx-1.5 md:mx-2 text-gray-400">/</span>
+              <span className="text-gray-700 truncate font-medium">{blog.title}</span>
             </div>
 
             {/* Category Badge */}
-            <div className="mb-4">
-              <span className="px-4 py-2 bg-[#ca993b]/10 text-[#ca993b] text-sm font-semibold rounded-full">
+            <div className="mb-3 md:mb-4">
+              <span className="px-3 md:px-4 py-2 bg-[#ca993b]/10 text-[#ca993b] text-sm font-semibold rounded-full">
                 {blog.category}
               </span>
             </div>
 
             {/* Title */}
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-gray-900">
               {blog.title}
             </h1>
 
             {/* Meta Information */}
-            <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-8 pb-8 border-b border-gray-200">
+            <div className="flex flex-wrap items-center gap-3 md:gap-4 text-gray-600 mb-6 md:mb-8 pb-6 md:pb-8 border-b border-gray-200">
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 md:w-5 h-4 md:h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                 </svg>
-                <span>{blog.author}</span>
+                <span className="text-sm md:text-base">{blog.author}</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 md:w-5 h-4 md:h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                 </svg>
-                <span>{blog.date}</span>
+                <span className="text-sm md:text-base">{blog.date}</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 md:w-5 h-4 md:h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                 </svg>
-                <span>{blog.readTime}</span>
+                <span className="text-sm md:text-base">{blog.readTime}</span>
               </div>
             </div>
 
             {/* Featured Image */}
-            <div className="mb-12 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-16 flex items-center justify-center">
-              <span className="text-9xl">{blog.image}</span>
+            <div className="mb-8 md:mb-12 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 md:p-16 flex items-center justify-center">
+              <span className="text-7xl md:text-9xl">{blog.image}</span>
             </div>
 
             {/* Article Content */}
-            <div className="prose prose-lg max-w-none">
+            <div className="max-w-none">
               {blog.content.map((paragraph, index) => (
                 <motion.p
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  className="text-gray-700 leading-relaxed mb-6"
+                  className="text-gray-700 leading-relaxed mb-4 md:mb-6 text-base md:text-lg px-2 md:px-0"
                 >
                   {paragraph}
                 </motion.p>
@@ -256,15 +256,15 @@ export default function BlogPost() {
             </div>
 
             {/* Share Buttons */}
-            <div className="mt-12 pt-8 border-t border-gray-200">
-              <h3 className="text-lg font-semibold mb-4">Chia sẻ bài viết:</h3>
-              <div className="flex gap-4">
+            <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-gray-200">
+              <h3 className="text-base md:text-lg font-semibold mb-3 md:mb-4">Chia sẻ bài viết:</h3>
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-6 py-3 bg-blue-600 text-white rounded-full font-medium hover:shadow-lg transition-shadow flex items-center gap-2"
+                  className="px-4 md:px-6 py-2 md:py-3 bg-blue-600 text-white rounded-full font-medium hover:shadow-lg transition-shadow flex items-center justify-center gap-2 text-sm md:text-base"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 md:w-5 h-4 md:h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.795.715-1.795 1.763V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
                   </svg>
                   Facebook
@@ -272,9 +272,9 @@ export default function BlogPost() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-6 py-3 bg-gray-800 text-white rounded-full font-medium hover:shadow-lg transition-shadow flex items-center gap-2"
+                  className="px-4 md:px-6 py-2 md:py-3 bg-gray-800 text-white rounded-full font-medium hover:shadow-lg transition-shadow flex items-center justify-center gap-2 text-sm md:text-base"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 md:w-5 h-4 md:h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                   </svg>
                   Twitter
@@ -287,10 +287,10 @@ export default function BlogPost() {
 
       {/* Related Articles */}
       {relatedBlogs.length > 0 && (
-        <section className="py-16 bg-white">
+        <section className="py-12 md:py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold mb-8">Bài viết liên quan</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">Bài viết liên quan</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {relatedBlogs.map(([key, relatedBlog], index) => (
                 <motion.article
                   key={key}
@@ -302,19 +302,19 @@ export default function BlogPost() {
                   className="bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition-all overflow-hidden cursor-pointer"
                 >
                   <Link href={`/tin-tuc/${key}`}>
-                    <div className="p-6">
-                      <div className="flex items-center justify-center w-full h-32 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl mb-4">
-                        <span className="text-6xl">{relatedBlog.image}</span>
+                    <div className="p-4 md:p-6">
+                      <div className="flex items-center justify-center w-full h-24 md:h-32 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl mb-3 md:mb-4">
+                        <span className="text-5xl md:text-6xl">{relatedBlog.image}</span>
                       </div>
                       <div className="mb-2">
-                        <span className="px-3 py-1 bg-[#ca993b]/10 text-[#ca993b] text-xs font-semibold rounded-full">
+                        <span className="px-2 md:px-3 py-1 bg-[#ca993b]/10 text-[#ca993b] text-xs font-semibold rounded-full">
                           {relatedBlog.category}
                         </span>
                       </div>
-                      <h3 className="text-lg font-bold mb-2 hover:text-[#ca993b] transition-colors line-clamp-2">
+                      <h3 className="text-base md:text-lg font-bold mb-2 hover:text-[#ca993b] transition-colors overflow-hidden text-ellipsis" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
                         {relatedBlog.title}
                       </h3>
-                      <div className="text-sm text-gray-500">{relatedBlog.readTime}</div>
+                      <div className="text-xs md:text-sm text-gray-500">{relatedBlog.readTime}</div>
                     </div>
                   </Link>
                 </motion.article>
