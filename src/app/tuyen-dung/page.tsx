@@ -87,7 +87,7 @@ export default function TuyenDungPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative w-full h-[30vh] sm:h-[30vh] md:h-[30vh] lg:h-[30vh] bg-gradient-to-r from-[#2e3b63] to-[#1f2a45] pt-20 sm:pt-16 md:pt-20">
+      <section className="relative w-full h-[30vh] sm:h-[30vh] md:h-[30vh] lg:h-[40vh] xl:h-[45vh] bg-gradient-to-r from-[#2e3b63] to-[#1f2a45] pt-20 sm:pt-16 md:pt-20">
         <div className="absolute inset-0 flex items-center justify-center pt-20 sm:pt-16 md:pt-20">
           <div className="text-center px-4 sm:px-6 lg:px-8">
             <motion.h1
@@ -128,7 +128,7 @@ export default function TuyenDungPage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 xl:gap-10">
             {whyJoinUs.map((item, index) => (
               <motion.div
                 key={index}
@@ -137,17 +137,17 @@ export default function TuyenDungPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -10 }}
-                className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all flex flex-col items-center justify-center text-center"
+                className="bg-white p-4 sm:p-6 lg:p-8 xl:p-10 2xl:p-12 rounded-xl shadow-lg hover:shadow-2xl transition-all flex flex-col items-center justify-center text-center"
               >
-                <div className="text-[#ca993b] mb-3 sm:mb-4 flex justify-center">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12">
+                <div className="text-[#ca993b] mb-3 sm:mb-4 xl:mb-5 flex justify-center">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16">
                     {item.icon}
                   </div>
                 </div>
-                <h3 className="text-sm sm:text-base lg:text-base font-bold text-[#2e3b63] mb-2 sm:mb-3 leading-snug">
+                <h3 className="text-sm sm:text-base lg:text-base xl:text-lg 2xl:text-xl font-bold text-[#2e3b63] mb-2 sm:mb-3 xl:mb-4 leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                <p className="text-gray-600 text-xs sm:text-sm xl:text-base 2xl:text-lg leading-relaxed">
                   {item.description}
                 </p>
               </motion.div>

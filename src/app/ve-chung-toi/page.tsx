@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { useInView } from 'framer-motion';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -17,6 +17,51 @@ export default function VeChungToiPage() {
     { number: '24/7', label: 'Đội ngũ tư vấn' },
     { number: '100+', label: 'Mã sản phẩm' },
   ];
+
+  // State for counting animation
+  const [counts, setCounts] = useState<number[]>(achievements.map(() => 0));
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  // Function to animate counting
+  const animateCount = (targetValue: string, index: number, duration: number = 2000) => {
+    const target = parseInt(targetValue.replace(/[^\d]/g, '')) || 0;
+    const startTime = Date.now();
+    const startValue = 0;
+
+    const updateCount = () => {
+      const now = Date.now();
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      // Easing function for smooth animation
+      const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+      const currentValue = Math.floor(startValue + (target - startValue) * easeOutQuart);
+
+      setCounts(prev => {
+        const newCounts = [...prev];
+        newCounts[index] = currentValue;
+        return newCounts;
+      });
+
+      if (progress < 1) {
+        requestAnimationFrame(updateCount);
+      }
+    };
+
+    updateCount();
+  };
+
+  // Trigger animation when section comes into view
+  useEffect(() => {
+    if (isStatsInView && !hasAnimated) {
+      setHasAnimated(true);
+      achievements.forEach((achievement, index) => {
+        setTimeout(() => {
+          animateCount(achievement.number, index);
+        }, index * 200); // Stagger the animations
+      });
+    }
+  }, [isStatsInView, hasAnimated]);
 
   const coreValues = [
     {
@@ -305,7 +350,7 @@ export default function VeChungToiPage() {
                 className="text-center bg-gray-50 rounded-2xl p-4 md:p-6 hover:bg-gray-100 transition-all border border-gray-200"
               >
                 <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#ca993b] mb-1 md:mb-2">
-                  {achievement.number}
+                  {counts[index]}{achievement.number.replace(/^\d+/, '')}
                 </div>
                 <div className="text-gray-700 text-xs md:text-sm lg:text-base font-medium leading-tight">
                   {achievement.label}

@@ -98,22 +98,24 @@ export default function Careers() {
                     </span>
                   </div>
 
-                  {/* Description */}
-                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                    {position.description}
-                  </p>
+                  {/* Description and Button Row */}
+                  <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+                    <p className="text-gray-600 text-sm sm:text-base leading-relaxed lg:flex-1 lg:truncate">
+                      {position.description}
+                    </p>
 
-                  {/* Button */}
-                  <div className="flex justify-start sm:justify-end pt-2">
-                    <Link href={`/tuyen-dung/${position.slug}`}>
-                      <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 bg-[#ca993b] text-white rounded-full font-semibold hover:shadow-lg transition-all text-sm sm:text-base whitespace-nowrap"
-                      >
-                        Xem thêm
-                      </motion.button>
-                    </Link>
+                    {/* Button */}
+                    <div className="flex justify-start sm:justify-end lg:justify-end lg:flex-shrink-0">
+                      <Link href={`/tuyen-dung/${position.slug}`}>
+                        <motion.button
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 bg-[#ca993b] text-white rounded-full font-semibold hover:shadow-lg transition-all text-sm sm:text-base whitespace-nowrap"
+                        >
+                          Xem thêm
+                        </motion.button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </motion.div>

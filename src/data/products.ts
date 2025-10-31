@@ -271,942 +271,6 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 11,
-    title: 'Nước Xả Comfort',
-    category: 'Nước Xả',
-    slug: 'nuoc-xa-comfort',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Comfort',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Comfort',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Comfort+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Comfort+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước xả vải Comfort với hương thơm quyến rũ, giúp quần áo mềm mại và dễ ủi hơn.',
-    features: [
-      'Hương thơm quyến rũ đa dạng',
-      'Mềm mại sợi vải tối đa',
-      'Dễ ủi, không nhăn',
-      'Lưu hương 48 giờ'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '1.5L, 1.8L, 3L' },
-      { label: 'Thương hiệu', value: 'Comfort' },
-      { label: 'Loại', value: 'Nước xả vải cao cấp' }
-    ],
-    usage: [
-      'Dùng 1 nắp cho mỗi mẻ giặt',
-      'Cho vào ngăn xả vải của máy giặt',
-      'Hoặc ngâm quần áo 3-5 phút rồi vắt khô',
-      'Không cần xả lại với nước'
-    ],
-    benefits: [
-      'Quần áo mềm mại, thơm lâu',
-      'Dễ ủi, tiết kiệm thời gian',
-      'An toàn cho da nhạy cảm',
-      'Giá cả hợp lý, chất lượng cao'
-    ]
-  },
-  {
-    id: 12,
-    title: 'Nước Xả Downy',
-    category: 'Nước Xả',
-    slug: 'nuoc-xa-downy',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Downy',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Downy',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Downy+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Downy+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước xả Downy chính hãng từ Thái Lan, giữ hương thơm lâu dài suốt 48 giờ.',
-    features: [
-      'Hương thơm đặc trưng Downy',
-      'Lưu hương 48 giờ',
-      'Mềm mại như lụa',
-      'Bảo vệ sợi vải'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '1.5L, 1.8L, 2.5L' },
-      { label: 'Thương hiệu', value: 'Downy' },
-      { label: 'Loại', value: 'Nước xả vải cao cấp' }
-    ],
-    usage: [
-      'Sử dụng 1 nắp cho mỗi lần giặt',
-      'Đổ vào ngăn xả vải hoặc ngâm trực tiếp',
-      'Ngâm 3-5 phút rồi vắt khô',
-      'Không cần xả lại'
-    ],
-    benefits: [
-      'Thương hiệu nổi tiếng toàn cầu',
-      'Hương thơm đặc trưng quyến rũ',
-      'Mềm mại, dễ ủi',
-      'Bảo vệ quần áo lâu dài'
-    ]
-  },
-  {
-    id: 13,
-    title: 'Nước Xả Essence',
-    category: 'Nước Xả',
-    slug: 'nuoc-xa-essence',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Essence',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Essence',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Essence+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Essence+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước xả Essence hương hoa tươi mát, bảo vệ sợi vải và giữ màu sắc tươi mới.',
-    features: [
-      'Hương hoa tươi mát tự nhiên',
-      'Giữ màu sắc quần áo',
-      'Chống nhăn hiệu quả',
-      'Dưỡng mềm sợi vải'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '1.5L, 2L, 2.5L' },
-      { label: 'Thương hiệu', value: 'Essence' },
-      { label: 'Loại', value: 'Nước xả vải' }
-    ],
-    usage: [
-      'Dùng 1 nắp cho mỗi mẻ giặt',
-      'Cho vào ngăn xả vải',
-      'Hoặc ngâm 3-5 phút sau khi giặt',
-      'Vắt khô và phơi'
-    ],
-    benefits: [
-      'Hương thơm tự nhiên dễ chịu',
-      'Bảo vệ màu sắc quần áo',
-      'Mềm mại, dễ ủi',
-      'Giá cả phải chăng'
-    ]
-  },
-  {
-    id: 14,
-    title: 'Nước Xả Hygiene',
-    category: 'Nước Xả',
-    slug: 'nuoc-xa-hygiene',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Hygiene',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Hygiene',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Hygiene+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Hygiene+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước xả Hygiene kháng khuẩn, bảo vệ gia đình bạn khỏi vi khuẩn gây hại.',
-    features: [
-      'Kháng khuẩn 99.9%',
-      'Bảo vệ sức khỏe gia đình',
-      'Mềm mại và thơm tho',
-      'An toàn cho trẻ em'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '1.5L, 2L, 3L' },
-      { label: 'Thương hiệu', value: 'Hygiene' },
-      { label: 'Loại', value: 'Nước xả kháng khuẩn' }
-    ],
-    usage: [
-      'Sử dụng 1 nắp mỗi lần giặt',
-      'Đặc biệt phù hợp cho quần áo trẻ em',
-      'Ngâm 5 phút sau giặt',
-      'Vắt khô và phơi nắng'
-    ],
-    benefits: [
-      'Diệt khuẩn hiệu quả',
-      'An toàn cho da nhạy cảm',
-      'Bảo vệ sức khỏe gia đình',
-      'Mềm mại, thơm tho'
-    ]
-  },
-  {
-    id: 15,
-    title: 'Nước Rửa Chén Sunlight',
-    category: 'Nước Tẩy Rửa',
-    slug: 'nuoc-rua-chen-sunlight',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Sunlight',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Sunlight',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Sunlight+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Sunlight+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước rửa chén Sunlight loại bỏ dầu mỡ hiệu quả, an toàn cho da tay và môi trường.',
-    features: [
-      'Loại bỏ dầu mỡ hiệu quả',
-      'An toàn cho da tay',
-      'Hương chanh tươi mát',
-      'Không để lại cặn'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '750ml, 1L, 1.5L' },
-      { label: 'Thương hiệu', value: 'Sunlight' },
-      { label: 'Loại', value: 'Nước rửa chén' }
-    ],
-    usage: [
-      'Pha loãng với nước hoặc dùng trực tiếp',
-      'Thoa lên bát đĩa và cọ rửa',
-      'Xả sạch với nước',
-      'Để khô tự nhiên'
-    ],
-    benefits: [
-      'Loại dầu mỡ hiệu quả',
-      'An toàn cho da',
-      'Thơm mát, sạch sẽ',
-      'Tiết kiệm, bền lâu'
-    ]
-  },
-  {
-    id: 16,
-    title: 'Nước Tẩy Toilet Duck',
-    category: 'Nước Tẩy Rửa',
-    slug: 'nuoc-tay-toilet-duck',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Duck',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Duck',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Duck+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Duck+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước tẩy nhà vệ sinh Duck với công thức mạnh mẽ diệt khuẩn 99.9%, làm sạch và thơm mát.',
-    features: [
-      'Diệt khuẩn 99.9%',
-      'Làm trắng bồn cầu',
-      'Khử mùi hiệu quả',
-      'Công thức gel bám dính tốt'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '500ml, 750ml, 900ml' },
-      { label: 'Thương hiệu', value: 'Toilet Duck' },
-      { label: 'Loại', value: 'Nước tẩy toilet' }
-    ],
-    usage: [
-      'Đổ dưới vành bồn cầu',
-      'Để ngấm 15-30 phút',
-      'Chà bằng bàn chải',
-      'Xả nước sạch'
-    ],
-    benefits: [
-      'Diệt khuẩn tối đa',
-      'Làm trắng bồn cầu',
-      'Khử mùi lâu dài',
-      'Sử dụng dễ dàng'
-    ]
-  },
-  {
-    id: 17,
-    title: 'Nước Rửa Chén Vim',
-    category: 'Nước Tẩy Rửa',
-    slug: 'nuoc-rua-chen-vim',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Vim',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Vim',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Vim+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Vim+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước rửa chén Vim công thức đặc biệt, khử mỡ nhanh chỉ với một giọt nhỏ.',
-    features: [
-      'Khử mỡ siêu nhanh',
-      'Tiết kiệm, chỉ cần ít',
-      'Không làm khô da tay',
-      'Hương chanh tự nhiên'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '750ml, 1L, 1.2L' },
-      { label: 'Thương hiệu', value: 'Vim' },
-      { label: 'Loại', value: 'Nước rửa chén đậm đặc' }
-    ],
-    usage: [
-      'Chỉ cần 1-2 giọt',
-      'Thoa đều lên bát đĩa',
-      'Cọ rửa nhẹ nhàng',
-      'Xả sạch với nước'
-    ],
-    benefits: [
-      'Tiết kiệm tối đa',
-      'Khử mỡ hiệu quả',
-      'Bảo vệ da tay',
-      'Mùi thơm dễ chịu'
-    ]
-  },
-  {
-    id: 18,
-    title: 'Nước Tẩy Đa Năng Mr. Muscle',
-    category: 'Nước Tẩy Rửa',
-    slug: 'nuoc-tay-mr-muscle',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Mr+Muscle',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Mr+Muscle',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Mr+Muscle+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Mr+Muscle+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước tẩy đa năng Mr. Muscle làm sạch mọi bề mặt, khử khuẩn và bảo vệ sức khỏe.',
-    features: [
-      'Làm sạch đa bề mặt',
-      'Diệt khuẩn hiệu quả',
-      'Khử mùi nhanh',
-      'Không để lại vệt'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '500ml, 750ml, 1L' },
-      { label: 'Thương hiệu', value: 'Mr. Muscle' },
-      { label: 'Loại', value: 'Nước tẩy đa năng' }
-    ],
-    usage: [
-      'Xịt trực tiếp lên bề mặt',
-      'Để 2-3 phút',
-      'Lau bằng khăn sạch',
-      'Không cần xả lại'
-    ],
-    benefits: [
-      'Đa năng, tiện lợi',
-      'Làm sạch nhanh',
-      'Diệt khuẩn tối đa',
-      'An toàn cho gia đình'
-    ]
-  },
-  {
-    id: 19,
-    title: 'Nước Lau Sàn Lipon',
-    category: 'Nước Lau Sàn',
-    slug: 'nuoc-lau-san-lipon',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Lipon',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Lipon',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Lipon+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Lipon+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước lau sàn Lipon Thái Lan với hương thơm dễ chịu, sàn nhà sạch bóng như mới.',
-    features: [
-      'Làm sạch và bóng sàn',
-      'Hương thơm dễ chịu',
-      'Không trơn trượt',
-      'Khô nhanh'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '1L, 2L, 3L' },
-      { label: 'Thương hiệu', value: 'Lipon' },
-      { label: 'Loại', value: 'Nước lau sàn' }
-    ],
-    usage: [
-      'Pha loãng với nước theo tỷ lệ 1:50',
-      'Lau sàn bằng cây lau hoặc khăn',
-      'Không cần xả lại',
-      'Để khô tự nhiên'
-    ],
-    benefits: [
-      'Sàn sạch bóng',
-      'Hương thơm lâu',
-      'An toàn, không trơn',
-      'Giá cả hợp lý'
-    ]
-  },
-  {
-    id: 20,
-    title: 'Nước Lau Sàn Kleenso',
-    category: 'Nước Lau Sàn',
-    slug: 'nuoc-lau-san-kleenso',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Kleenso',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Kleenso',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Kleenso+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Kleenso+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước lau sàn Kleenso diệt khuẩn hiệu quả, an toàn cho trẻ em và thú cưng.',
-    features: [
-      'Diệt khuẩn 99.9%',
-      'An toàn cho trẻ em, thú cưng',
-      'Hương thơm tự nhiên',
-      'Không độc hại'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '900ml, 1.5L, 2L' },
-      { label: 'Thương hiệu', value: 'Kleenso' },
-      { label: 'Loại', value: 'Nước lau sàn kháng khuẩn' }
-    ],
-    usage: [
-      'Pha loãng 1:40 với nước',
-      'Lau sàn đều khắp',
-      'Không cần xả',
-      'Khô tự nhiên'
-    ],
-    benefits: [
-      'Diệt khuẩn tối đa',
-      'An toàn tuyệt đối',
-      'Mùi thơm dễ chịu',
-      'Bảo vệ sức khỏe'
-    ]
-  },
-  {
-    id: 21,
-    title: 'Nước Lau Sàn Joy',
-    category: 'Nước Lau Sàn',
-    slug: 'nuoc-lau-san-joy',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Joy',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Joy',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Joy+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Joy+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước lau sàn Joy hương thơm tự nhiên, làm sạch và khử mùi hiệu quả.',
-    features: [
-      'Hương thơm tự nhiên',
-      'Khử mùi hiệu quả',
-      'Làm bóng sàn',
-      'Khô nhanh'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '1L, 1.8L, 2.5L' },
-      { label: 'Thương hiệu', value: 'Joy' },
-      { label: 'Loại', value: 'Nước lau sàn' }
-    ],
-    usage: [
-      'Pha 1:50 với nước',
-      'Lau sàn đều',
-      'Không xả lại',
-      'Để khô'
-    ],
-    benefits: [
-      'Sạch sẽ, thơm tho',
-      'Khử mùi tốt',
-      'Bóng sàn tự nhiên',
-      'Giá tốt'
-    ]
-  },
-  {
-    id: 22,
-    title: 'Sữa Tắm Breeze',
-    category: 'Chăm Sóc Da',
-    slug: 'sua-tam-breeze',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Breeze+Body',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Breeze+Body',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Breeze+Body+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Breeze+Body+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Sữa tắm Breeze Thái Lan dưỡng ẩm sâu, thơm mát và mịn màng cả ngày dài.',
-    features: [
-      'Dưỡng ẩm sâu',
-      'Hương thơm quyến rũ',
-      'Mịn màng da tức thì',
-      'Kháng khuẩn hiệu quả'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '450ml, 600ml, 900ml' },
-      { label: 'Thương hiệu', value: 'Breeze' },
-      { label: 'Loại', value: 'Sữa tắm dưỡng ẩm' }
-    ],
-    usage: [
-      'Làm ướt cơ thể',
-      'Cho sữa tắm ra tay hoặc bông tắm',
-      'Massage nhẹ nhàng',
-      'Xả sạch với nước'
-    ],
-    benefits: [
-      'Da mịn màng tức thì',
-      'Hương thơm lưu lâu',
-      'Dưỡng ẩm cả ngày',
-      'Kháng khuẩn bảo vệ da'
-    ]
-  },
-  {
-    id: 23,
-    title: 'Kem Dưỡng Da Nivea',
-    category: 'Chăm Sóc Da',
-    slug: 'kem-duong-da-nivea',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Nivea',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Nivea',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Nivea+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Nivea+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Kem dưỡng da Nivea chính hãng, dưỡng ẩm chuyên sâu 24h, làm trắng da tự nhiên.',
-    features: [
-      'Dưỡng ẩm 24 giờ',
-      'Làm trắng da tự nhiên',
-      'Chống lão hóa',
-      'Thấm nhanh không nhờn'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '50ml, 100ml, 200ml' },
-      { label: 'Thương hiệu', value: 'Nivea' },
-      { label: 'Loại', value: 'Kem dưỡng da toàn thân' }
-    ],
-    usage: [
-      'Làm sạch da trước khi dùng',
-      'Lấy lượng kem vừa đủ',
-      'Thoa đều lên da',
-      'Massage nhẹ nhàng đến khi thấm'
-    ],
-    benefits: [
-      'Dưỡng ẩm suốt 24h',
-      'Da trắng sáng tự nhiên',
-      'Chống lão hóa hiệu quả',
-      'Thương hiệu uy tín'
-    ]
-  },
-  {
-    id: 24,
-    title: 'Dầu Gội Clear',
-    category: 'Chăm Sóc Da',
-    slug: 'dau-goi-clear',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Clear',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Clear',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Clear+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Clear+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Dầu gội Clear Thái Lan chống gàu hiệu quả, tóc khỏe mạnh và bồng bềnh.',
-    features: [
-      'Chống gàu hiệu quả',
-      'Nuôi dưỡng tóc khỏe',
-      'Tóc bồng bềnh mượt mà',
-      'Giảm ngứa da đầu'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '300ml, 450ml, 650ml' },
-      { label: 'Thương hiệu', value: 'Clear' },
-      { label: 'Loại', value: 'Dầu gội chống gàu' }
-    ],
-    usage: [
-      'Làm ướt tóc',
-      'Cho dầu gội vào tay',
-      'Massage da đầu 2-3 phút',
-      'Xả sạch với nước'
-    ],
-    benefits: [
-      'Hết gàu từ lần đầu',
-      'Tóc khỏe, bồng bềnh',
-      'Da đầu sạch, không ngứa',
-      'Thơm mát cả ngày'
-    ]
-  },
-  {
-    id: 25,
-    title: 'Nước Rửa Tay Lifebuoy',
-    category: 'Chăm Sóc Da',
-    slug: 'nuoc-rua-tay-lifebuoy',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Lifebuoy',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Lifebuoy',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Lifebuoy+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Lifebuoy+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước rửa tay Lifebuoy diệt khuẩn 99.9%, bảo vệ cả gia đình khỏi vi khuẩn.',
-    features: [
-      'Diệt khuẩn 99.9%',
-      'Bảo vệ gia đình',
-      'Dịu nhẹ với da',
-      'Hương thơm sảng khoái'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '200ml, 450ml, 750ml' },
-      { label: 'Thương hiệu', value: 'Lifebuoy' },
-      { label: 'Loại', value: 'Nước rửa tay kháng khuẩn' }
-    ],
-    usage: [
-      'Làm ướt tay',
-      'Cho nước rửa tay ra',
-      'Xoa đều 20 giây',
-      'Xả sạch với nước'
-    ],
-    benefits: [
-      'Diệt khuẩn tối đa',
-      'Bảo vệ sức khỏe',
-      'An toàn cho da',
-      'Mùi thơm sạch sẽ'
-    ]
-  },
-  {
-    id: 26,
-    title: 'Sữa Tắm Dove',
-    category: 'Chăm Sóc Da',
-    slug: 'sua-tam-dove',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Dove',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Dove',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Dove+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Dove+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Sữa tắm Dove dưỡng ẩm vượt trội với 1/4 kem dưỡng, da mềm mịn tức thì.',
-    features: [
-      'Chứa 1/4 kem dưỡng',
-      'Dưỡng ẩm vượt trội',
-      'Da mềm mịn tức thì',
-      'Hương thơm nhẹ nhàng'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '400ml, 530ml, 800ml' },
-      { label: 'Thương hiệu', value: 'Dove' },
-      { label: 'Loại', value: 'Sữa tắm dưỡng ẩm' }
-    ],
-    usage: [
-      'Làm ướt cơ thể',
-      'Cho sữa tắm vào tay',
-      'Massage nhẹ nhàng',
-      'Xả sạch'
-    ],
-    benefits: [
-      'Da mềm mịn ngay lập tức',
-      'Dưỡng ẩm sâu',
-      'Thơm nhẹ dễ chịu',
-      'Phù hợp da nhạy cảm'
-    ]
-  },
-  {
-    id: 27,
-    title: 'Dầu Gội Sunsilk',
-    category: 'Chăm Sóc Da',
-    slug: 'dau-goi-sunsilk',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Sunsilk',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Sunsilk',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Sunsilk+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Sunsilk+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Dầu gội Sunsilk công thức chuyên sâu, tóc mượt mà và bóng khỏe từ gốc đến ngọn.',
-    features: [
-      'Tóc mượt mà tức thì',
-      'Bóng khỏe từ gốc đến ngọn',
-      'Giảm rụng tóc',
-      'Hương thơm quyến rũ'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '320ml, 450ml, 650ml' },
-      { label: 'Thương hiệu', value: 'Sunsilk' },
-      { label: 'Loại', value: 'Dầu gội dưỡng tóc' }
-    ],
-    usage: [
-      'Làm ướt tóc',
-      'Thoa dầu gội lên tóc',
-      'Massage 2-3 phút',
-      'Xả sạch với nước'
-    ],
-    benefits: [
-      'Tóc mượt mà, bóng khỏe',
-      'Giảm gãy rụng',
-      'Dễ chải, không rối',
-      'Hương thơm lâu'
-    ]
-  },
-  {
-    id: 28,
-    title: 'Mì Mama Tôm Yum',
-    category: 'Thực Phẩm Thái Lan',
-    slug: 'mi-mama-tom-yum',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Mama',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Mama',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Mama+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Mama+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Mì ăn liền Mama số 1 Thái Lan với hương vị Tôm Yum đặc trưng, cay nồng hấp dẫn.',
-    features: [
-      'Hương vị Tôm Yum đặc trưng',
-      'Cay nồng hấp dẫn',
-      'Sợi mì dai ngon',
-      'Nước soup đậm đà'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Trọng lượng', value: '55g, 60g, 70g' },
-      { label: 'Thương hiệu', value: 'Mama' },
-      { label: 'Loại', value: 'Mì ăn liền' }
-    ],
-    usage: [
-      'Cho mì vào tô',
-      'Đổ nước sôi vào',
-      'Đậy nắp 3 phút',
-      'Trộn đều và thưởng thức'
-    ],
-    benefits: [
-      'Nhanh gọn, tiện lợi',
-      'Hương vị đặc trưng Thái',
-      'Giá cả phải chăng',
-      'Được yêu thích toàn cầu'
-    ]
-  },
-  {
-    id: 29,
-    title: 'Nước Mắm Cá Thái Lan',
-    category: 'Thực Phẩm Thái Lan',
-    slug: 'nuoc-mam-ca-thai-lan',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Fish+Sauce',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Fish+Sauce',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Fish+Sauce+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Fish+Sauce+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước mắm cá Thái Lan chính hãng, đậm đà ngon miệng, tăng thêm hương vị món ăn.',
-    features: [
-      'Đậm đà ngon miệng',
-      'Chính hãng Thái Lan',
-      'Không chất bảo quản',
-      'Tăng vị món ăn'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '300ml, 700ml, 1L' },
-      { label: 'Thương hiệu', value: 'Thai Fish Sauce' },
-      { label: 'Loại', value: 'Nước mắm cá' }
-    ],
-    usage: [
-      'Dùng để nêm nếm món ăn',
-      'Làm nước chấm',
-      'Pha chế món Thái',
-      'Bảo quản nơi khô mát'
-    ],
-    benefits: [
-      'Vị đậm đà tự nhiên',
-      'Không chất bảo quản',
-      'Tăng vị món ăn',
-      'Giá cả hợp lý'
-    ]
-  },
-  {
-    id: 30,
-    title: 'Snack Khoai Tây Thái',
-    category: 'Thực Phẩm Thái Lan',
-    slug: 'snack-khoai-tay-thai',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Snack',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Snack',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Snack+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Snack+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Bánh snack khoai tây Thái Lan giòn tan, nhiều vị độc đáo, thích hợp mọi lứa tuổi.',
-    features: [
-      'Giòn tan thơm ngon',
-      'Nhiều vị độc đáo',
-      'Không chất bảo quản độc hại',
-      'Bao bì tiện lợi'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Trọng lượng', value: '25g, 48g, 60g' },
-      { label: 'Thương hiệu', value: 'Thai Snack' },
-      { label: 'Loại', value: 'Snack khoai tây' }
-    ],
-    usage: [
-      'Ăn trực tiếp',
-      'Kết hợp với nước giải khát',
-      'Phù hợp mọi dịp',
-      'Bảo quản nơi khô ráo'
-    ],
-    benefits: [
-      'Ngon miệng, giòn tan',
-      'Đa dạng hương vị',
-      'Tiện lợi mang đi',
-      'Phù hợp mọi lứa tuổi'
-    ]
-  },
-  {
-    id: 31,
-    title: 'Xốt Ớt Sriracha',
-    category: 'Thực Phẩm Thái Lan',
-    slug: 'xot-ot-sriracha',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Sriracha',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Sriracha',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Sriracha+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Sriracha+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Tương ớt Sriracha Thái Lan cay nồng đặc trưng, không thể thiếu trong bữa ăn.',
-    features: [
-      'Cay nồng đặc trưng',
-      'Hương vị phong phú',
-      'Đa năng trong nấu nướng',
-      'Chai tiện lợi'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '200ml, 435ml, 730ml' },
-      { label: 'Thương hiệu', value: 'Sriracha' },
-      { label: 'Loại', value: 'Tương ớt' }
-    ],
-    usage: [
-      'Chấm trực tiếp',
-      'Pha chế món ăn',
-      'Làm gia vị',
-      'Bảo quản nơi thoáng mát'
-    ],
-    benefits: [
-      'Cay nồng hấp dẫn',
-      'Đa dạng cách dùng',
-      'Tăng vị món ăn',
-      'Chai tiện lợi'
-    ]
-  },
-  {
-    id: 32,
-    title: 'Trà Thái Xanh',
-    category: 'Thực Phẩm Thái Lan',
-    slug: 'tra-thai-xanh',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Thai+Tea',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Thai+Tea',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Thai+Tea+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Thai+Tea+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Trà xanh Thái Lan thơm ngon, giải khát tuyệt vời, tốt cho sức khỏe.',
-    features: [
-      'Thơm ngon tự nhiên',
-      'Giải khát hiệu quả',
-      'Tốt cho sức khỏe',
-      'Pha chế dễ dàng'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Trọng lượng', value: '200g, 400g, 1kg' },
-      { label: 'Thương hiệu', value: 'Thai Green Tea' },
-      { label: 'Loại', value: 'Trà xanh' }
-    ],
-    usage: [
-      'Pha với nước nóng',
-      'Có thể uống nóng hoặc lạnh',
-      'Thêm sữa theo khẩu vị',
-      'Bảo quản nơi khô ráo'
-    ],
-    benefits: [
-      'Giải khát tốt',
-      'Tốt cho sức khỏe',
-      'Thơm ngon tự nhiên',
-      'Dễ pha chế'
-    ]
-  },
-  {
-    id: 33,
-    title: 'Bánh Pocky Thái',
-    category: 'Thực Phẩm Thái Lan',
-    slug: 'banh-pocky-thai',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Pocky',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Pocky',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Pocky+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Pocky+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Bánh que Pocky Thái Lan giòn ngon với nhiều hương vị chocolate đa dạng.',
-    features: [
-      'Giòn ngon hấp dẫn',
-      'Nhiều hương vị',
-      'Bao bì đẹp mắt',
-      'Phù hợp làm quà'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Trọng lượng', value: '33g, 39g, 45g' },
-      { label: 'Thương hiệu', value: 'Pocky' },
-      { label: 'Loại', value: 'Bánh que phủ chocolate' }
-    ],
-    usage: [
-      'Ăn trực tiếp',
-      'Làm quà tặng',
-      'Ăn vặt',
-      'Bảo quản nơi khô mát'
-    ],
-    benefits: [
-      'Ngon miệng, giòn tan',
-      'Đa dạng hương vị',
-      'Bao bì đẹp',
-      'Phù hợp mọi lứa tuổi'
-    ]
-  },
-  {
-    id: 35,
-    title: 'Nước Xả Lenor',
-    category: 'Nước Xả',
-    slug: 'nuoc-xa-lenor',
-    image: 'https://placehold.co/400x400/ffffff/2e3b63?text=Lenor',
-    images: [
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Lenor',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Lenor+2',
-      'https://placehold.co/600x800/ffffff/2e3b63?text=Lenor+3'
-    ],
-    isNew: false,
-    inStock: true,
-    description: 'Nước xả Lenor hương thơm sang trọng, mang lại cảm giác thư giãn cho cả gia đình.',
-    features: [
-      'Hương thơm sang trọng đẳng cấp',
-      'Mềm mại như khăn spa',
-      'Lưu hương cực lâu',
-      'Công nghệ Châu Âu'
-    ],
-    specifications: [
-      { label: 'Xuất xứ', value: 'Thái Lan' },
-      { label: 'Dung tích', value: '1.5L, 1.8L, 2.2L' },
-      { label: 'Thương hiệu', value: 'Lenor' },
-      { label: 'Loại', value: 'Nước xả cao cấp' }
-    ],
-    usage: [
-      'Dùng 1 nắp cho mỗi mẻ giặt',
-      'Cho vào ngăn xả vải',
-      'Ngâm 3-5 phút',
-      'Vắt khô, không cần xả lại'
-    ],
-    benefits: [
-      'Hương thơm sang trọng',
-      'Mềm mại vượt trội',
-      'Thư giãn tinh thần',
-      'Chất lượng Châu Âu'
-    ]
-  },
-  {
     id: 36,
     title: 'Bánh Xốp Jumpo Thái Lan Vị Socola',
     category: 'Thực Phẩm Thái Lan',
@@ -3867,7 +2931,1675 @@ export const products: Product[] = [
       'Lưu hương dài lâu',
       'Dung tích lớn tiết kiệm'
     ]
+  },
+  // Okashi Dishwashing Liquids
+  {
+    id: 104,
+    title: 'Nước Rửa Chén Okashi Hương Tinh Dầu Quế & Muối Khoáng Chai 1000ml',
+    category: 'Nước Rửa Chén',
+    subcategory: 'Okashi',
+    slug: 'nuoc-rua-chen-okashi-huong-tinh-dau-que-muoi-khoang-1000ml',
+    image: '/Product/Okashi/okashi_que_muoikhoang.png', // Placeholder - will need actual image
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước Rửa Chén Okashi Hương Tinh Dầu Quế & Muối Khoáng mang đến giải pháp làm sạch hiệu quả với công thức kết hợp tinh dầu quế tự nhiên và muối khoáng, giúp đánh bay dầu mỡ, vết bẩn cứng đầu và khử mùi tanh trên chén bát nhanh chóng. Hương thơm ấm nồng đặc trưng từ quế tạo cảm giác dễ chịu, thư giãn khi sử dụng.',
+    metaDescription: 'Nước Rửa Chén Okashi Hương Tinh Dầu Quế & Muối Khoáng làm sạch dầu mỡ, khử mùi tanh hiệu quả với tinh dầu quế và muối khoáng.',
+    features: [
+      'Công thức kết hợp tinh dầu quế tự nhiên và muối khoáng',
+      'Làm sạch hiệu quả dầu mỡ và vết bẩn cứng đầu',
+      'Khử mùi tanh nhanh chóng',
+      'Hương thơm ấm nồng đặc trưng từ quế',
+      'Dịu nhẹ, không gây khô da',
+      'Thân thiện với môi trường'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '1000ml' },
+      { label: 'Thương hiệu', value: 'Okashi' },
+      { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Cho dung dịch Okashi vừa đủ hòa vào một chén nước',
+      'Hòa tan khoảng 2 giây và bắt đầu rửa',
+      'Có thể dùng với nước lạnh hoặc nước nóng'
+    ],
+    benefits: [
+      'Làm sạch hiệu quả các vết dầu mỡ và cặn bám',
+      'Khử mùi tanh tốt',
+      'Khử khuẩn nhẹ',
+      'Hương thơm dễ chịu',
+      'An toàn cho da tay',
+      'Tiết kiệm nước và thời gian'
+    ]
+  },
+  {
+    id: 105,
+    title: 'Nước Rửa Chén Okashi Hương Tinh Dầu Gừng & Muối Khoáng Chai 1000ml',
+    category: 'Nước Rửa Chén',
+    subcategory: 'Okashi',
+    slug: 'nuoc-rua-chen-okashi-huong-tinh-dau-gung-muoi-khoang-1000ml',
+    image: 'Product/Okashi/okashi_gung_muoikhoang.png', // Placeholder - will need actual image
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước rửa chén Okashi Hương Tinh Dầu Gừng & Muối Khoáng không chỉ làm sạch nhanh chóng các vết dầu mỡ, mà còn khử mùi hiệu quả và bảo vệ da tay. Mùi gừng nhẹ ấm, dễ chịu tạo cảm giác sạch sẽ, an toàn khi sử dụng hàng ngày.',
+    metaDescription: 'Chiết xuất gừng và muối khoáng giúp rửa sạch nhanh, khử mùi tốt, không gây khô da. Hương gừng dịu nhẹ, tự nhiên, an toàn cho cả gia đình.',
+    features: [
+      'Chiết xuất gừng và muối khoáng tự nhiên',
+      'Làm sạch nhanh chóng các vết dầu mỡ',
+      'Khử mùi hiệu quả',
+      'Bảo vệ da tay không gây khô',
+      'Hương gừng dịu nhẹ, tự nhiên',
+      'An toàn cho cả gia đình'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '1000ml' },
+      { label: 'Thương hiệu', value: 'Okashi' },
+      { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Cho dung dịch Okashi vừa đủ hòa vào một chén nước',
+      'Hòa tan khoảng 2 giây và bắt đầu rửa',
+      'Có thể dùng với nước lạnh hoặc nước nóng'
+    ],
+    benefits: [
+      'Làm sạch hiệu quả các vết dầu mỡ và cặn bám',
+      'Khử mùi tanh tốt',
+      'Khử khuẩn nhẹ',
+      'Hương thơm dễ chịu',
+      'An toàn cho da tay',
+      'Tiết kiệm nước và thời gian'
+    ]
+  },
+  // Vixol Toilet Bowl Cleaners
+  {
+    id: 106,
+    title: 'Nước tẩy Bồn Cầu Duck Pro 900ml',
+    category: 'Nước Tẩy Rửa',
+    subcategory: 'Duck',
+    slug: 'nuoc-tay-bon-cau-duck-pro-900ml',
+    image: '/Product/Duck.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước tẩy bồn cầu Duck Pro 900ml là sản phẩm làm sạch chuyên dụng đến từ thương hiệu Duck, nổi bật với công thức Germinex siêu mạnh có khả năng diệt đến 99,9% vi khuẩn và tẩy sạch các vết bẩn cứng đầu như ố vàng, cặn vôi, gỉ sét trong bồn cầu và nhà vệ sinh. Không chỉ làm sạch, Duck Pro còn để lại hương thơm dịu nhẹ, giúp không gian nhà vệ sinh luôn thông thoáng, dễ chịu.',
+    metaDescription: 'Nước tẩy bồn cầu Duck Pro 900ml diệt 99,9% vi khuẩn, đánh bay ố vàng, cặn vôi, gỉ sét và mang lại hương thơm dịu nhẹ cho nhà vệ sinh luôn sạch sẽ, thông thoáng.',
+    features: [
+      'Công thức Germinex siêu mạnh',
+      'Diệt 99,9% vi khuẩn',
+      'Tẩy sạch ố vàng, cặn vôi, gỉ sét',
+      'Hương thơm dịu nhẹ',
+      'Không gian nhà vệ sinh thông thoáng'
+    ],
+    specifications: [
+      // { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '900ml' },
+      { label: 'Thương hiệu', value: 'Duck' },
+      //  
+    ],
+    usage: [
+      'Cho trực tiếp nước tẩy bồn cầu Duck lên thành bồn cầu',
+      'Dùng dụng cụ cọ rửa khoảng 5 phút rồi xả lại với nước',
+      'Hòa 2 nắp nước tẩy bồn cầu Duck vào 3 lít nước để sử dụng cho nhà tắm',
+      'Dùng dụng cụ để cọ rửa sàn nhà tắm và khu vực nhà vệ sinh'
+    ],
+    benefits: [
+      'Loại bỏ hiệu quả các vết bẩn cứng đầu như ố vàng, cặn vôi, gỉ sét',
+      'Tiêu diệt đến 99,9% vi khuẩn gây mùi',
+      'Mang lại bề mặt sạch bong',
+      'Không gian nhà vệ sinh thông thoáng, dễ chịu',
+      'Hương thơm nhẹ nhàng sau khi sử dụng'
+    ]
+  },
+  {
+    id: 107,
+    title: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol White 900ml',
+    category: 'Nước Tẩy Rửa',
+    subcategory: 'Vixol',
+    slug: 'nuoc-tay-bon-cau-nha-tam-vixol-white-900ml',
+    image: '/Product/Vixol/White.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol White 900ml với công thức DUO Action kết hợp chất tẩy vết bẩn và lớp phủ bề mặt giúp làm sạch nhanh chóng mà không tốn nhiều công sức chà rửa. Sản phẩm loại bỏ 11 loại vết bẩn thường gặp như rỉ sét, cặn vôi, rêu xanh, vết bẩn khe gạch… đồng thời tiêu diệt 99,9% vi khuẩn, nấm mốc, virus Rotavirus và H1N1, mang đến hương thơm Sun Breeze tươi mát.',
+    metaDescription: 'Nước tẩy bồn cầu và nhà tắm Vixol White 900ml với công thức DUO Action làm sạch nhanh, diệt 99,9% vi khuẩn, mang hương Sun Breeze tươi mát.',
+    features: [
+      'Công thức DUO Action',
+      'Làm sạch nhanh chóng',
+      'Loại bỏ 11 loại vết bẩn thường gặp',
+      'Tiêu diệt 99,9% vi khuẩn, nấm mốc, virus',
+      'Hương thơm Sun Breeze tươi mát'
+    ],
+    specifications: [
+      // { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '900ml' },
+      { label: 'Thương hiệu', value: 'Vixol' },
+      //  
+    ],
+    usage: [
+      'Pha dung dịch theo tỉ lệ 02 phần dung dịch Vixol với 01 phần nước',
+      'Đổ hỗn hợp vừa pha lên nơi muốn tẩy rửa và diệt khuẩn',
+      'Để khoảng 10 phút rồi dùng bàn chải hoặc khăn lau chà nhẹ',
+      'Rửa lại bằng nước sạch'
+    ],
+    benefits: [
+      'Tẩy sạch các vết bẩn cứng đầu dễ dàng',
+      'Làm cho bề mặt bồn cầu và nhà tắm trở nên sáng bóng',
+      'Khử nấm và diệt khuẩn lên đến 99.9%',
+      'Loại bỏ rỉ sét, cặn vôi, rêu xanh, vết bẩn khe gạch',
+      'Hương thơm tươi mát'
+    ]
+  },
+  {
+    id: 108,
+    title: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Smart 900ml',
+    category: 'Nước Tẩy Rửa',
+    subcategory: 'Vixol',
+    slug: 'nuoc-tay-bon-cau-nha-tam-vixol-smart-900ml',
+    image: '/Product/Vixol/Smart.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Smart 900ml với công thức DUO Action kết hợp chất tẩy và lớp phủ bề mặt giúp làm sạch hiệu quả mà không tốn nhiều sức. Sản phẩm loại bỏ 11 loại vết bẩn thường gặp, diệt 99,9% vi khuẩn và đem lại hương Pink Paradise thơm ngát, giữ không gian phòng tắm luôn sạch sẽ, thơm mát.',
+    metaDescription: 'Vixol Smart 900ml làm sạch hiệu quả với công thức DUO Action, loại bỏ 11 vết bẩn thường gặp và diệt 99,9% vi khuẩn, hương Pink Paradise thơm ngát.',
+    features: [
+      'Công thức DUO Action',
+      'Làm sạch hiệu quả',
+      'Loại bỏ 11 loại vết bẩn thường gặp',
+      'Diệt 99,9% vi khuẩn',
+      'Hương Pink Paradise thơm ngát'
+    ],
+    specifications: [
+      // { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '900ml' },
+      { label: 'Thương hiệu', value: 'Vixol' },
+    ],
+    usage: [
+      'Pha dung dịch theo tỉ lệ 02 phần dung dịch Vixol với 01 phần nước',
+      'Đổ hỗn hợp vừa pha lên nơi muốn tẩy rửa và diệt khuẩn',
+      'Để khoảng 10 phút rồi dùng bàn chải hoặc khăn lau chà nhẹ',
+      'Rửa lại bằng nước sạch'
+    ],
+    benefits: [
+      'Tẩy sạch các vết bẩn cứng đầu dễ dàng',
+      'Làm cho bề mặt bồn cầu và nhà tắm trở nên sáng bóng',
+      'Khử nấm và diệt khuẩn lên đến 99.9%',
+      'Giữ không gian phòng tắm luôn sạch sẽ, thơm mát',
+      'Hương thơm ngát quyến rũ'
+    ]
+  },
+  {
+    id: 109,
+    title: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Power 900ml',
+    category: 'Nước Tẩy Rửa',
+    subcategory: 'Vixol',
+    slug: 'nuoc-tay-bon-cau-nha-tam-vixol-power-900ml',
+    image: '/Product/Vixol/Power.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Power 900ml sử dụng công thức DUO Action tiên tiến, vừa làm mềm và đánh bay vết bẩn cứng đầu, vừa phủ lớp bảo vệ giúp bề mặt sáng bóng và dễ lau chùi hơn. Sản phẩm loại bỏ 11 loại vết bẩn phổ biến và diệt 99,9% vi khuẩn, nấm mốc, virus Rotavirus, H1N1, mang đến hương Forever Fresh sảng khoái.',
+    metaDescription: 'Nước tẩy bồn cầu Vixol Power 900ml với công nghệ DUO Action đánh bay vết bẩn cứng đầu, diệt 99,9% vi khuẩn, hương Forever Fresh sảng khoái.',
+    features: [
+      'Công thức DUO Action tiên tiến',
+      'Làm mềm và đánh bay vết bẩn cứng đầu',
+      'Phủ lớp bảo vệ bề mặt sáng bóng',
+      'Loại bỏ 11 loại vết bẩn phổ biến',
+      'Diệt 99,9% vi khuẩn, nấm mốc, virus',
+      'Hương Forever Fresh sảng khoái'
+    ],
+    specifications: [
+      // { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '900ml' },
+      { label: 'Thương hiệu', value: 'Vixol' },
+      // { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha dung dịch theo tỉ lệ 02 phần dung dịch Vixol với 01 phần nước',
+      'Đổ hỗn hợp vừa pha lên nơi muốn tẩy rửa và diệt khuẩn',
+      'Để khoảng 10 phút rồi dùng bàn chải hoặc khăn lau chà nhẹ',
+      'Rửa lại bằng nước sạch'
+    ],
+    benefits: [
+      'Tẩy sạch các vết bẩn cứng đầu dễ dàng',
+      'Làm cho bề mặt bồn cầu và nhà tắm trở nên sáng bóng',
+      'Khử nấm và diệt khuẩn lên đến 99.9%',
+      'Bề mặt dễ lau chùi hơn',
+      'Hương thơm sảng khoái'
+    ]
+  },
+  {
+    id: 110,
+    title: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Pink 900ml',
+    category: 'Nước Tẩy Rửa',
+    subcategory: 'Vixol',
+    slug: 'nuoc-tay-bon-cau-nha-tam-vixol-pink-900ml',
+    image: '/Product/Vixol/Pink.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Pink 900ml với công thức DUO Action kết hợp chất tẩy vết bẩn và lớp phủ bề mặt giúp đánh bay nhanh chóng 11 loại vết bẩn thường gặp như rỉ sét, cặn vôi, rêu xanh, vết bẩn khe gạch… mà không tốn nhiều công sức. Sản phẩm còn tiêu diệt 99,9% vi khuẩn, mang đến hương Pink Paradise ngọt ngào, giúp phòng tắm luôn sạch sẽ và thơm mát.',
+    metaDescription: 'Vixol Pink 900ml giúp làm sạch nhanh 11 loại vết bẩn, diệt 99,9% vi khuẩn nhờ công thức DUO Action, mang hương Pink Paradise ngọt ngào, dễ chịu.',
+    features: [
+      'Công thức DUO Action',
+      'Đánh bay nhanh chóng 11 loại vết bẩn',
+      'Tiêu diệt 99,9% vi khuẩn',
+      'Hương Pink Paradise ngọt ngào',
+      'Phòng tắm luôn sạch sẽ và thơm mát'
+    ],
+    specifications: [
+      // { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '900ml' },
+      { label: 'Thương hiệu', value: 'Vixol' },
+      // { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha dung dịch theo tỉ lệ 02 phần dung dịch Vixol với 01 phần nước',
+      'Đổ hỗn hợp vừa pha lên nơi muốn tẩy rửa và diệt khuẩn',
+      'Để khoảng 10 phút rồi dùng bàn chải hoặc khăn lau chà nhẹ',
+      'Rửa lại bằng nước sạch'
+    ],
+    benefits: [
+      'Tẩy sạch các vết bẩn cứng đầu dễ dàng',
+      'Làm cho bề mặt bồn cầu và nhà tắm trở nên sáng bóng',
+      'Khử nấm và diệt khuẩn lên đến 99.9%',
+      'Loại bỏ rỉ sét, cặn vôi, rêu xanh, vết bẩn khe gạch',
+      'Hương thơm ngọt ngào'
+    ]
+  },
+  {
+    id: 111,
+    title: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Gold 900ml',
+    category: 'Nước Tẩy Rửa',
+    subcategory: 'Vixol',
+    slug: 'nuoc-tay-bon-cau-nha-tam-vixol-gold-900ml',
+    image: '/Product/Vixol/Gold.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Gold 900ml sở hữu công thức 3D Action hiện đại giúp làm sạch nhanh chóng, ngăn vết bẩn bám lại và giữ cho bề mặt sáng bóng lâu dài, giảm tần suất vệ sinh. Sản phẩm loại bỏ 11 loại vết bẩn cứng đầu, diệt 99,9% vi khuẩn và nấm mốc, mang đến hương Fresh Touch tươi mát cho không gian phòng tắm.',
+    metaDescription: 'Nước tẩy bồn cầu Vixol Gold 900ml với công thức 3D Action làm sạch nhanh, ngăn bám bẩn, diệt 99,9% vi khuẩn, hương Fresh Touch tươi mát.',
+    features: [
+      'Công thức 3D Action hiện đại',
+      'Làm sạch nhanh chóng',
+      'Ngăn vết bẩn bám lại',
+      'Giữ bề mặt sáng bóng lâu dài',
+      'Loại bỏ 11 loại vết bẩn cứng đầu',
+      'Diệt 99,9% vi khuẩn và nấm mốc',
+      'Hương Fresh Touch tươi mát'
+    ],
+    specifications: [
+      // { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '900ml' },
+      { label: 'Thương hiệu', value: 'Vixol' },
+      // { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha dung dịch theo tỉ lệ 02 phần dung dịch Vixol với 01 phần nước',
+      'Đổ hỗn hợp vừa pha lên nơi muốn tẩy rửa và diệt khuẩn',
+      'Để khoảng 10 phút rồi dùng bàn chải hoặc khăn lau chà nhẹ',
+      'Rửa lại bằng nước sạch'
+    ],
+    benefits: [
+      'Tẩy sạch các vết bẩn cứng đầu dễ dàng',
+      'Làm cho bề mặt bồn cầu và nhà tắm trở nên sáng bóng',
+      'Khử nấm và diệt khuẩn lên đến 99.9%',
+      'Giảm tần suất vệ sinh',
+      'Hương thơm tươi mát'
+    ]
+  },
+  {
+    id: 112,
+    title: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Oxy Xanh Hương Aqua Fresh 700ml',
+    category: 'Nước Tẩy Rửa',
+    subcategory: 'Vixol',
+    slug: 'nuoc-tay-bon-cau-nha-tam-vixol-oxy-xanh-huong-aqua-fresh-700ml',
+    image: '/Product/Vixol/Aqua_Fresh.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Oxy Xanh Hương Aqua Fresh 700ml với công thức sức mạnh oxy "O2 Power" (không chứa axit) để làm sạch phòng tắm mạnh mẽ cùng hương Aqua fresh, đánh bay mọi vết ố vàng, cặn phèn và mảng bám nhanh chóng nhanh hơn gấp 2 lần, giúp cho các thiết bị sứ như bồn tắm, bệ toilet,… luôn sạch sẽ, trắng sáng.',
+    metaDescription: 'Vixol Oxy Xanh Aqua Fresh 700ml với công nghệ O2 Power không axit, làm sạch nhanh gấp 2 lần, khử ố vàng, hương Aqua Fresh sảng khoái.',
+    features: [
+      'Công thức sức mạnh oxy "O2 Power"',
+      'Không chứa axit',
+      'Làm sạch nhanh gấp 2 lần',
+      'Đánh bay vết ố vàng, cặn phèn và mảng bám',
+      'Hương Aqua Fresh sảng khoái',
+      'Các thiết bị sứ luôn sạch sẽ, trắng sáng'
+    ],
+    specifications: [
+      // { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '700ml' },
+      { label: 'Thương hiệu', value: 'Vixol' },
+      // { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha dung dịch theo tỉ lệ 02 phần dung dịch Vixol với 01 phần nước',
+      'Đổ hỗn hợp vừa pha lên nơi muốn tẩy rửa và diệt khuẩn',
+      'Để khoảng 10 phút rồi dùng bàn chải hoặc khăn lau chà nhẹ',
+      'Rửa lại bằng nước sạch'
+    ],
+    benefits: [
+      'Tẩy sạch các vết bẩn cứng đầu dễ dàng',
+      'Làm cho bề mặt bồn cầu và nhà tắm trở nên sáng bóng',
+      'Khử nấm và diệt khuẩn lên đến 99.9%',
+      'Làm sạch mạnh mẽ với sức mạnh oxy',
+      'Hương thơm sảng khoái'
+    ]
+  },
+  {
+    id: 113,
+    title: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Oxy Hồng Hương Hoa 700ml',
+    category: 'Nước Tẩy Rửa',
+    subcategory: 'Vixol',
+    slug: 'nuoc-tay-bon-cau-nha-tam-vixol-oxy-hong-huong-hoa-700ml',
+    image: '/Product/Vixol/Hong_Huong_Hoa.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Oxy Hồng Hương Hoa 700ml với công thức sức mạnh oxy "O2 Power" (không chứa axit) để làm sạch phòng tắm mạnh mẽ cùng hương hoa thơm, đánh bay mọi vết ố vàng, cặn phèn và mảng bám nhanh chóng nhanh hơn gấp 2 lần, giúp cho các thiết bị sứ như bồn tắm, bệ toilet,… luôn sạch sẽ, trắng sáng.',
+    metaDescription: 'Nước tẩy Vixol Oxy Hồng 700ml ứng dụng O2 Power không axit, làm sạch mạnh mẽ, đánh bay vết ố vàng, hương hoa thơm ngát, dễ chịu.',
+    features: [
+      'Công thức sức mạnh oxy "O2 Power"',
+      'Không chứa axit',
+      'Làm sạch mạnh mẽ',
+      'Đánh bay vết ố vàng',
+      'Hương hoa thơm ngát, dễ chịu'
+    ],
+    specifications: [
+      // { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '700ml' },
+      { label: 'Thương hiệu', value: 'Vixol' },
+      // { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha dung dịch theo tỉ lệ 02 phần dung dịch Vixol với 01 phần nước',
+      'Đổ hỗn hợp vừa pha lên nơi muốn tẩy rửa và diệt khuẩn',
+      'Để khoảng 10 phút rồi dùng bàn chải hoặc khăn lau chà nhẹ',
+      'Rửa lại bằng nước sạch'
+    ],
+    benefits: [
+      'Tẩy sạch các vết bẩn cứng đầu dễ dàng',
+      'Làm cho bề mặt bồn cầu và nhà tắm trở nên sáng bóng',
+      'Khử nấm và diệt khuẩn lên đến 99.9%',
+      'Làm sạch mạnh mẽ với sức mạnh oxy',
+      'Hương hoa thơm ngát'
+    ]
+  },
+  {
+    id: 114,
+    title: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Oxy Xanh Spring Fresh 700ml',
+    category: 'Nước Tẩy Rửa',
+    subcategory: 'Vixol',
+    slug: 'nuoc-tay-bon-cau-nha-tam-vixol-oxy-xanh-spring-fresh-700ml',
+    image: '/Product/Vixol/Spring_Fresh.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước Tẩy Bồn Cầu và Nhà Tắm Vixol Oxy Xanh Spring Fresh 700ml với công thức sức mạnh oxy "O2 Power" (không chứa axit) để làm sạch phòng tắm mạnh mẽ cùng hương hoa thơm, đánh bay mọi vết ố vàng, cặn phèn và mảng bám nhanh chóng nhanh hơn gấp 2 lần, giúp cho các thiết bị sứ như bồn tắm, bệ toilet,… luôn sạch sẽ, trắng sáng.',
+    metaDescription: 'Vixol Oxy Xanh Spring Fresh 700ml với công nghệ O2 Power không axit, làm sạch nhanh gấp 2 lần, khử ố vàng, hương Spring Fresh tươi mới.',
+    features: [
+      'Công thức sức mạnh oxy "O2 Power"',
+      'Không chứa axit',
+      'Làm sạch nhanh gấp 2 lần',
+      'Khử ố vàng',
+      'Hương Spring Fresh tươi mới'
+    ],
+    specifications: [
+      // { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '700ml' },
+      { label: 'Thương hiệu', value: 'Vixol' },
+      // { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha dung dịch theo tỉ lệ 02 phần dung dịch Vixol với 01 phần nước',
+      'Đổ hỗn hợp vừa pha lên nơi muốn tẩy rửa và diệt khuẩn',
+      'Để khoảng 10 phút rồi dùng bàn chải hoặc khăn lau chà nhẹ',
+      'Rửa lại bằng nước sạch'
+    ],
+    benefits: [
+      'Tẩy sạch các vết bẩn cứng đầu dễ dàng',
+      'Làm cho bề mặt bồn cầu và nhà tắm trở nên sáng bóng',
+      'Khử nấm và diệt khuẩn lên đến 99.9%',
+      'Làm sạch mạnh mẽ với sức mạnh oxy',
+      'Hương thơm tươi mới'
+    ]
+  },
+  // Vaseline Body Lotions
+  {
+    id: 115,
+    title: 'Sữa dưỡng thể Vaseline Gluta-Hya Serum Burst Lotion Dewy Radiance 300ml',
+    category: 'Chăm Sóc Da',
+    subcategory: 'Vaseline',
+    slug: 'sua-duong-the-vaseline-gluta-hya-serum-burst-lotion-dewy-radiance-300ml',
+    image: '/Product/Vaseline/pink.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Sữa dưỡng thể Vaseline Gluta-Hya Serum Burst Lotion Dewy Radiance 300ml ứng dụng công nghệ GlutaGlow mạnh gấp 70 lần so với Vitamin C, kết hợp cùng niacinamide và hyaluronic acid giúp dưỡng da sáng rạng rỡ, căng mướt không bị khô. Chất kem nhẹ như serum tan trên da, thẩm thấu nhanh chóng, để lại cảm giác mềm mại và ẩm mịn tự nhiên.',
+    metaDescription: 'Dưỡng da sáng mịn, căng mướt với Sữa dưỡng thể Vaseline Gluta-Hya Serum Burst Lotion Dewy Radiance 300ml, thẩm thấu nhanh, ẩm mịn không gây kích ứng.',
+    features: [
+      'Công nghệ GlutaGlow mạnh gấp 70 lần Vitamin C',
+      'Kết hợp niacinamide và hyaluronic acid',
+      'Dưỡng da sáng rạng rỡ, căng mướt',
+      'Chất kem nhẹ như serum tan trên da',
+      'Thẩm thấu nhanh chóng',
+      'Cảm giác mềm mại và ẩm mịn tự nhiên'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '300ml' },
+      { label: 'Thương hiệu', value: 'Vaseline' },
+      { label: 'Hạn sử dụng', value: '36 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Xoa dưỡng thể theo chiều xoắn ốc để kem thẩm thấu nhanh và đều vào da',
+      'Nên thoa sữa dưỡng thể khoảng 30 phút trước khi đi ngủ'
+    ],
+    benefits: [
+      'Khôi phục sự cân bằng tự nhiên cho làn da',
+      'Công nghệ GlutaGlow kết hợp amino peptide',
+      'Phục hồi và nuôi dưỡng da suốt đêm',
+      'Da sáng mịn, căng mướt',
+      'Thẩm thấu nhanh, không gây kích ứng'
+    ]
+  },
+  {
+    id: 116,
+    title: 'Sữa dưỡng thể Vaseline Gluta-Hya Serum Burst UV Lotion Flawless Bright 330ml',
+    category: 'Chăm Sóc Da',
+    subcategory: 'Vaseline',
+    slug: 'sua-duong-the-vaseline-gluta-hya-serum-burst-uv-lotion-flawless-bright-330ml',
+    image: '/Product/Vaseline/yellow.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Sữa dưỡng thể Vaseline Gluta-Hya Serum Burst UV Lotion Flawless Bright 330ml bổ sung công thức Flawless Bright với GlutaGlow mạnh gấp 10 lần so với Vitamin C, giúp bảo vệ da khỏi các tác nhân gây xỉn màu và hỗ trợ làm sáng da hiệu quả. Thành phần chứa Hyaluronic cùng bộ lọc UV tăng cường giữ ẩm và bảo vệ da, cho làn da mịn màng, tươi sáng hơn mỗi ngày.',
+    metaDescription: 'Sữa dưỡng thể Vaseline Gluta-Hya Serum Burst UV Lotion Flawless Bright 330ml bảo vệ da khỏi xỉn màu, dưỡng sáng và giữ ẩm sâu với Hyaluronic & UV filter.',
+    features: [
+      'Công thức Flawless Bright',
+      'GlutaGlow mạnh gấp 10 lần Vitamin C',
+      'Bảo vệ da khỏi các tác nhân gây xỉn màu',
+      'Hỗ trợ làm sáng da hiệu quả',
+      'Thành phần chứa Hyaluronic',
+      'Bộ lọc UV tăng cường bảo vệ da'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '330ml' },
+      { label: 'Thương hiệu', value: 'Vaseline' },
+      { label: 'Hạn sử dụng', value: '36 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Xoa dưỡng thể theo chiều xoắn ốc để kem thẩm thấu nhanh và đều vào da',
+      'Nên thoa sữa dưỡng thể khoảng 30 phút trước khi đi ngủ'
+    ],
+    benefits: [
+      'Khôi phục sự cân bằng tự nhiên cho làn da',
+      'Công nghệ GlutaGlow kết hợp amino peptide',
+      'Phục hồi và nuôi dưỡng da suốt đêm',
+      'Da mịn màng, tươi sáng hơn mỗi ngày',
+      'Giữ ẩm sâu và bảo vệ da khỏi UV'
+    ]
+  },
+  {
+    id: 117,
+    title: 'Sữa dưỡng thể Vaseline Gluta-Hya Serum Burst Lotion Overnight Radiance Repair 330ml',
+    category: 'Chăm Sóc Da',
+    subcategory: 'Vaseline',
+    slug: 'sua-duong-the-vaseline-gluta-hya-serum-burst-lotion-overnight-radiance-repair-330ml',
+    image: '/Product/Vaseline/blue.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Sữa dưỡng thể Vaseline Gluta-Hya Serum Burst Lotion Overnight Radiance Repair 330ml tối ưu dưỡng da ban đêm bằng công nghệ GlutaGlow mạnh gấp 10 lần so với Vitamin C, kết hợp amino peptide giúp phục hồi và nuôi dưỡng da suốt đêm. Kết cấu serum tan thấm nhanh, mang lại cảm giác mềm mại và căng mướt ngay sau khi thoa.',
+    metaDescription: 'Phục hồi da suốt đêm với Sữa dưỡng thể Vaseline Gluta-Hya Serum Burst Lotion Overnight Radiance Repair 330ml cho da mềm mại, căng mướt.',
+    features: [
+      'Tối ưu dưỡng da ban đêm',
+      'Công nghệ GlutaGlow mạnh gấp 10 lần Vitamin C',
+      'Kết hợp amino peptide',
+      'Phục hồi và nuôi dưỡng da suốt đêm',
+      'Kết cấu serum tan thấm nhanh',
+      'Cảm giác mềm mại và căng mướt'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '330ml' },
+      { label: 'Thương hiệu', value: 'Vaseline' },
+      { label: 'Hạn sử dụng', value: '36 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Xoa dưỡng thể theo chiều xoắn ốc để kem thẩm thấu nhanh và đều vào da',
+      'Nên thoa sữa dưỡng thể khoảng 30 phút trước khi đi ngủ'
+    ],
+    benefits: [
+      'Khôi phục sự cân bằng tự nhiên cho làn da',
+      'Công nghệ GlutaGlow kết hợp amino peptide',
+      'Phục hồi và nuôi dưỡng da suốt đêm',
+      'Da mềm mại và căng mướt',
+      'Thẩm thấu nhanh, hiệu quả ban đêm'
+    ]
+  },
+  // Deemee Dishwashing Liquids
+  {
+    id: 118,
+    title: 'Nước Rửa Chén Deemee Hương Trà Xanh',
+    category: 'Nước Rửa Chén',
+    subcategory: 'Deemee',
+    slug: 'nuoc-rua-chen-deemee-huong-tra-xanh',
+    image: '/Product/Deemee/Txanh.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước rửa chén Deemee Hương Trà Xanh với công thức ION đột phá diệt khuẩn 99.9%(*) giúp chén dĩa luôn sạch bóng, khử mùi tanh, đánh bay dầu mỡ và ngát hương trà xanh. Đây là sản phẩm nước rửa chén an toàn cho da tay.',
+    metaDescription: 'Nước rửa chén Deemee Hương Trà Xanh với công thức ION diệt khuẩn 99.9%, khử mùi tanh, đánh bay dầu mỡ, an toàn cho da tay.',
+    features: [
+      'Công thức ION đột phá',
+      'Diệt khuẩn 99.9%',
+      'Chén dĩa luôn sạch bóng',
+      'Khử mùi tanh hiệu quả',
+      'Đánh bay dầu mỡ',
+      'Ngát hương trà xanh',
+      'An toàn cho da tay'
+    ],
+    specifications: [
+      // { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '1000ml' },
+      { label: 'Thương hiệu', value: 'Deemee' },
+      // { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha loãng nước Rửa Chén Deemee Hương Trà Xanh vào nước hoặc đổ trực tiếp lên miếng rửa chén đã thấm ướt',
+      'Bóp nhẹ để tạo bọt rồi rửa chén',
+      'Sau đó rửa lại bằng nước sạch'
+    ],
+    benefits: [
+      'Đánh bay mọi vết bẩn cứng đầu và lớp dầu mỡ lì lợm',
+      'Trả lại cho chén dĩa vẻ sáng bóng như mới',
+      'Tiêu diệt đến 99,9% vi khuẩn có hại',
+      'Bảo vệ sức khỏe cả gia đình trong từng bữa ăn',
+      'Hương trà xanh thanh mát lan tỏa',
+      'Giúp bạn cảm thấy thư thái và dễ chịu khi đang rửa chén'
+    ]
+  },
+  {
+    id: 119,
+    title: 'Nước Rửa Chén Deemee Hương Gừng Sả',
+    category: 'Nước Rửa Chén',
+    subcategory: 'Deemee',
+    slug: 'nuoc-rua-chen-deemee-huong-gung-sa',
+    image: '/Product/Deemee/Gsa.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước rửa chén Deemee Hương Gừng Sả với công thức ION đột phá diệt khuẩn 99.9%(*) giúp chén dĩa luôn sạch bóng, khử mùi tanh, đánh bay dầu mỡ và ngát hương gừng sả tự nhiên. Đây là sản phẩm nước rửa chén an toàn cho da tay.',
+    metaDescription: 'Nước rửa chén Deemee Hương Gừng Sả công thức ION diệt khuẩn 99.9%, làm sạch nhanh, khử mùi tanh, hương gừng sả tự nhiên dễ chịu.',
+    features: [
+      'Công thức ION đột phá',
+      'Diệt khuẩn 99.9%',
+      'Chén dĩa luôn sạch bóng',
+      'Khử mùi tanh hiệu quả',
+      'Đánh bay dầu mỡ',
+      'Ngát hương gừng sả tự nhiên',
+      'An toàn cho da tay'
+    ],
+    specifications: [
+      // { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '1000ml' },
+      { label: 'Thương hiệu', value: 'Deemee' },
+      // { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha loãng nước Rửa Chén Deemee Hương Gừng Sả vào nước hoặc đổ trực tiếp lên miếng rửa chén đã thấm ướt',
+      'Bóp nhẹ để tạo bọt rồi rửa chén',
+      'Sau đó rửa lại bằng nước sạch'
+    ],
+    benefits: [
+      'Đánh bay mọi vết bẩn cứng đầu và lớp dầu mỡ lì lợm',
+      'Trả lại cho chén dĩa vẻ sáng bóng như mới',
+      'Tiêu diệt đến 99,9% vi khuẩn có hại',
+      'Bảo vệ sức khỏe cả gia đình trong từng bữa ăn',
+      'Hương gừng xả thanh mát lan tỏa',
+      'Giúp bạn cảm thấy thư thái và dễ chịu khi đang rửa chén'
+    ]
+  },
+  {
+    id: 120,
+    title: 'Nước Rửa Chén Deemee Hương Đào',
+    category: 'Nước Rửa Chén',
+    subcategory: 'Deemee',
+    slug: 'nuoc-rua-chen-deemee-huong-dao',
+    image: '/Product/Deemee/Dao.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước rửa chén Deemee Hương Đào với công thức ION đột phá diệt khuẩn 99.9%(*) giúp chén dĩa luôn sạch bóng, khử mùi tanh, đánh bay dầu mỡ và ngát hương đào. Đây là sản phẩm nước rửa chén an toàn cho da tay.',
+    metaDescription: 'Nước rửa chén Deemee Hương Đào công thức ION diệt khuẩn 99.9%, khử mùi tanh, đánh bay dầu mỡ, lưu hương đào ngọt ngào, dễ chịu.',
+    features: [
+      'Công thức ION đột phá',
+      'Diệt khuẩn 99.9%',
+      'Chén dĩa luôn sạch bóng',
+      'Khử mùi tanh hiệu quả',
+      'Đánh bay dầu mỡ',
+      'Ngát hương đào ngọt ngào',
+      'An toàn cho da tay'
+    ],
+    specifications: [
+      // { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '1000ml' },
+      { label: 'Thương hiệu', value: 'Deemee' },
+      // { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha loãng nước Rửa Chén Deemee Hương Đào vào nước hoặc đổ trực tiếp lên miếng rửa chén đã thấm ướt',
+      'Bóp nhẹ để tạo bọt rồi rửa chén',
+      'Sau đó rửa lại bằng nước sạch'
+    ],
+    benefits: [
+      'Đánh bay mọi vết bẩn cứng đầu và lớp dầu mỡ lì lợm',
+      'Trả lại cho chén dĩa vẻ sáng bóng như mới',
+      'Tiêu diệt đến 99,9% vi khuẩn có hại',
+      'Bảo vệ sức khỏe cả gia đình trong từng bữa ăn',
+      'Hương đào tự nhiên thanh mát lan tỏa',
+      'Giúp bạn cảm thấy thư thái và dễ chịu khi đang rửa chén'
+    ]
+  },
+  // Okay Floor Cleaners
+  {
+    id: 121,
+    title: 'Nước lau sàn Okay Floral Fresh can 2 lít',
+    category: 'Nước Lau Sàn',
+    subcategory: 'Okay',
+    slug: 'nuoc-lau-san-okay-floral-fresh-can-2-lit',
+    image: '/Product/Okashi/Floral_Fresh/2000.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước lau sàn Okay Floral Fresh can 2 lít với hương hoa tươi mát giúp không gian sống thêm dễ chịu và thư giãn. Công thức làm sạch hiệu quả, loại bỏ bụi và vết bẩn trên sàn, để lại bề mặt sáng bóng và thơm lâu.',
+    metaDescription: 'Nước lau sàn Okay Floral Fresh 2L hương hoa tươi mát, làm sạch hiệu quả, loại bỏ bụi bẩn và mang lại sàn nhà sáng bóng, thơm lâu.',
+    features: [
+      'Hương hoa tươi mát',
+      'Công thức làm sạch hiệu quả',
+      'Loại bỏ bụi và vết bẩn trên sàn',
+      'Để lại bề mặt sáng bóng',
+      'Thơm lâu'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '2 lít' },
+      { label: 'Thương hiệu', value: 'Okay' },
+      { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha 1 nắp (khoảng 30ml) Nước lau sàn Okay với 5 lít nước sạch',
+      'Nhúng cây lau vào dung dịch đã pha, vắt khô vừa phải',
+      'Lau đều bề mặt sàn và lau lại bằng nước sạch',
+      'Đậy kín nắp sau khi sử dụng và bảo quản nơi khô ráo, thoáng mát'
+    ],
+    benefits: [
+      'Làm sạch bụi bẩn và vết ố trên sàn hiệu quả',
+      'Lưu lại hương hoa tươi mát',
+      'Mang đến không gian sống dễ chịu, đầy sức sống',
+      'Phù hợp cho các loại sàn gạch men, đá hoa, gỗ đã xử lý, sàn nhựa',
+      'Thích hợp cho gia đình, văn phòng, cửa hàng'
+    ]
+  },
+  {
+    id: 122,
+    title: 'Nước lau sàn Okay Lemongrass can 2 lít',
+    category: 'Nước Lau Sàn',
+    subcategory: 'Okay',
+    slug: 'nuoc-lau-san-okay-lemongrass-can-2-lit',
+    image: '/Product/Okashi/Lemongrass/2000.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước lau sàn Okay Lemongrass can 2 lít mang hương sả dịu nhẹ, giúp khử mùi và xua đuổi côn trùng hiệu quả. Sản phẩm làm sạch nhanh chóng, giữ cho sàn nhà luôn sạch bóng và thoáng mát.',
+    metaDescription: 'Nước lau sàn Okay Lemongrass 2L hương sả dịu nhẹ, khử mùi, xua côn trùng, làm sạch nhanh và giữ sàn nhà luôn sạch bóng, thoáng mát.',
+    features: [
+      'Hương sả dịu nhẹ',
+      'Khử mùi hiệu quả',
+      'Xua đuổi côn trùng',
+      'Làm sạch nhanh chóng',
+      'Giữ sàn nhà sạch bóng và thoáng mát'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '2 lít' },
+      { label: 'Thương hiệu', value: 'Okay' },
+      { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha 1 nắp (khoảng 30ml) Nước lau sàn Okay với 5 lít nước sạch',
+      'Nhúng cây lau vào dung dịch đã pha, vắt khô vừa phải',
+      'Lau đều bề mặt sàn và lau lại bằng nước sạch',
+      'Đậy kín nắp sau khi sử dụng và bảo quản nơi khô ráo, thoáng mát'
+    ],
+    benefits: [
+      'Làm sạch nhanh chóng',
+      'Khử mùi hiệu quả',
+      'Mang hương sả chanh thanh mát tự nhiên',
+      'Giúp xua đuổi muỗi và côn trùng',
+      'Phù hợp cho các loại sàn cứng'
+    ]
+  },
+  {
+    id: 123,
+    title: 'Nước lau sàn Okay Lavender can 2 lít',
+    category: 'Nước Lau Sàn',
+    subcategory: 'Okay',
+    slug: 'nuoc-lau-san-okay-lavender-can-2-lit',
+    image: '/Product/Okashi/Lavender/2000.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước lau sàn Okay Lavender can 2 lít với hương oải hương thư giãn mang lại cảm giác dễ chịu sau mỗi lần lau dọn. Công thức diệt khuẩn và làm sạch mạnh mẽ giúp sàn nhà sáng bóng, sạch sẽ và thơm ngát.',
+    metaDescription: 'Nước lau sàn Okay Lavender 2L hương oải hương thư giãn, diệt khuẩn và làm sạch mạnh mẽ, giúp sàn nhà sáng bóng, thơm ngát dài lâu.',
+    features: [
+      'Hương oải hương thư giãn',
+      'Diệt khuẩn hiệu quả',
+      'Làm sạch mạnh mẽ',
+      'Sàn nhà sáng bóng',
+      'Thơm ngát dài lâu'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '2 lít' },
+      { label: 'Thương hiệu', value: 'Okay' },
+      { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha 1 nắp (khoảng 30ml) Nước lau sàn Okay với 5 lít nước sạch',
+      'Nhúng cây lau vào dung dịch đã pha, vắt khô vừa phải',
+      'Lau đều bề mặt sàn và lau lại bằng nước sạch',
+      'Đậy kín nắp sau khi sử dụng và bảo quản nơi khô ráo, thoáng mát'
+    ],
+    benefits: [
+      'Loại bỏ bụi bẩn, vết ố trên sàn',
+      'Tỏa hương oải hương thư giãn',
+      'Giúp tinh thần thoải mái, dễ chịu',
+      'Diệt khuẩn hiệu quả',
+      'Làm cho sàn nhà sáng bóng'
+    ]
+  },
+  {
+    id: 124,
+    title: 'Nước lau sàn Okay Skyblue can 2 lít',
+    category: 'Nước Lau Sàn',
+    subcategory: 'Okay',
+    slug: 'nuoc-lau-san-okay-skyblue-can-2-lit',
+    image: '/Product/Okashi/Skyblue/2000.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước lau sàn Okay Skyblue can 2 lít đem đến hương thơm trong lành, tươi mát. Sản phẩm giúp loại bỏ vết bẩn nhanh chóng, diệt khuẩn và giữ cho không gian nhà cửa luôn sạch sẽ, thoáng đãng.',
+    metaDescription: 'Nước lau sàn Okay Skyblue 2L hương trong lành, tươi mát, giúp loại bỏ vết bẩn, diệt khuẩn, mang lại không gian sạch sẽ, thoáng đãng.',
+    features: [
+      'Hương thơm trong lành, tươi mát',
+      'Loại bỏ vết bẩn nhanh chóng',
+      'Diệt khuẩn hiệu quả',
+      'Giữ không gian sạch sẽ',
+      'Thoáng đãng'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '2 lít' },
+      { label: 'Thương hiệu', value: 'Okay' },
+      { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha 1 nắp (khoảng 30ml) Nước lau sàn Okay với 5 lít nước sạch',
+      'Nhúng cây lau vào dung dịch đã pha, vắt khô vừa phải',
+      'Lau đều bề mặt sàn và lau lại bằng nước sạch',
+      'Đậy kín nắp sau khi sử dụng và bảo quản nơi khô ráo, thoáng mát'
+    ],
+    benefits: [
+      'Làm sạch vết bẩn và bụi mịn trên sàn',
+      'Đem lại hương thơm mát lành, sảng khoái',
+      'Giữ cho không gian luôn tươi mới',
+      'Diệt khuẩn hiệu quả',
+      'Thích hợp cho mọi loại sàn cứng'
+    ]
+  },
+  {
+    id: 125,
+    title: 'Nước lau sàn Okay Floral Fresh can 3,8 lít',
+    category: 'Nước Lau Sàn',
+    subcategory: 'Okay',
+    slug: 'nuoc-lau-san-okay-floral-fresh-can-3-8-lit',
+    image: '/Product/Okashi/Floral_Fresh/3800.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước lau sàn Okay Floral Fresh can 3,8 lít với hương hoa tươi mát giúp không gian sống thêm dễ chịu và thư giãn. Công thức làm sạch hiệu quả, loại bỏ bụi và vết bẩn trên sàn, để lại bề mặt sáng bóng và thơm lâu.',
+    metaDescription: 'Nước lau sàn Okay Floral Fresh 3.8L hương hoa tươi mát, làm sạch hiệu quả, loại bỏ bụi bẩn và lưu hương dễ chịu, thư giãn dài lâu.',
+    features: [
+      'Hương hoa tươi mát',
+      'Công thức làm sạch hiệu quả',
+      'Loại bỏ bụi và vết bẩn trên sàn',
+      'Để lại bề mặt sáng bóng',
+      'Thơm lâu dài'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '3.8 lít' },
+      { label: 'Thương hiệu', value: 'Okay' },
+      { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha 1 nắp (khoảng 30ml) Nước lau sàn Okay với 5 lít nước sạch',
+      'Nhúng cây lau vào dung dịch đã pha, vắt khô vừa phải',
+      'Lau đều bề mặt sàn và lau lại bằng nước sạch',
+      'Đậy kín nắp sau khi sử dụng và bảo quản nơi khô ráo, thoáng mát'
+    ],
+    benefits: [
+      'Làm sạch bụi bẩn và vết ố trên sàn hiệu quả',
+      'Lưu lại hương hoa tươi mát',
+      'Mang đến không gian sống dễ chịu, đầy sức sống',
+      'Dung tích lớn tiết kiệm chi phí',
+      'Phù hợp cho gia đình và văn phòng'
+    ]
+  },
+  {
+    id: 126,
+    title: 'Nước lau sàn Okay Lemongrass can 3,8 lít',
+    category: 'Nước Lau Sàn',
+    subcategory: 'Okay',
+    slug: 'nuoc-lau-san-okay-lemongrass-can-3-8-lit',
+    image: '/Product/Okashi/Lemongrass/3800.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước lau sàn Okay Lemongrass can 3,8 lít mang hương sả dịu nhẹ, giúp khử mùi và xua đuổi côn trùng hiệu quả. Sản phẩm làm sạch nhanh chóng, giữ cho sàn nhà luôn sạch bóng và thoáng mát.',
+    metaDescription: 'Nước lau sàn Okay Lemongrass 3.8L hương sả dịu nhẹ, khử mùi, xua côn trùng, làm sạch nhanh, giúp sàn luôn sáng bóng và thơm mát.',
+    features: [
+      'Hương sả dịu nhẹ',
+      'Khử mùi hiệu quả',
+      'Xua đuổi côn trùng',
+      'Làm sạch nhanh chóng',
+      'Giữ sàn nhà sáng bóng và thơm mát'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '3.8 lít' },
+      { label: 'Thương hiệu', value: 'Okay' },
+      { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha 1 nắp (khoảng 30ml) Nước lau sàn Okay với 5 lít nước sạch',
+      'Nhúng cây lau vào dung dịch đã pha, vắt khô vừa phải',
+      'Lau đều bề mặt sàn và lau lại bằng nước sạch',
+      'Đậy kín nắp sau khi sử dụng và bảo quản nơi khô ráo, thoáng mát'
+    ],
+    benefits: [
+      'Làm sạch nhanh chóng',
+      'Khử mùi hiệu quả',
+      'Mang hương sả chanh thanh mát tự nhiên',
+      'Giúp xua đuổi muỗi và côn trùng',
+      'Dung tích lớn cho nhiều lần sử dụng'
+    ]
+  },
+  {
+    id: 127,
+    title: 'Nước lau sàn Okay Floral Fresh can 5 lít',
+    category: 'Nước Lau Sàn',
+    subcategory: 'Okay',
+    slug: 'nuoc-lau-san-okay-floral-fresh-can-5-lit',
+    image: '/Product/Okashi/Floral_Fresh/5000.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước lau sàn Okay Floral Fresh can 5 lít với hương hoa tươi mát giúp không gian sống thêm dễ chịu và thư giãn. Công thức làm sạch hiệu quả, loại bỏ bụi và vết bẩn trên sàn, để lại bề mặt sáng bóng và thơm lâu.',
+    metaDescription: 'Nước lau sàn Okay Floral Fresh 5L hương hoa tươi mát, làm sạch hiệu quả, loại bỏ bụi bẩn, cho sàn nhà sáng bóng và thơm lâu.',
+    features: [
+      'Hương hoa tươi mát',
+      'Công thức làm sạch hiệu quả',
+      'Loại bỏ bụi và vết bẩn trên sàn',
+      'Để lại bề mặt sáng bóng',
+      'Thơm lâu dài'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '5 lít' },
+      { label: 'Thương hiệu', value: 'Okay' },
+      { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha 1 nắp (khoảng 30ml) Nước lau sàn Okay với 5 lít nước sạch',
+      'Nhúng cây lau vào dung dịch đã pha, vắt khô vừa phải',
+      'Lau đều bề mặt sàn và lau lại bằng nước sạch',
+      'Đậy kín nắp sau khi sử dụng và bảo quản nơi khô ráo, thoáng mát'
+    ],
+    benefits: [
+      'Làm sạch bụi bẩn và vết ố trên sàn hiệu quả',
+      'Lưu lại hương hoa tươi mát',
+      'Mang đến không gian sống dễ chịu, đầy sức sống',
+      'Dung tích lớn phù hợp cho gia đình lớn',
+      'Tiết kiệm chi phí sử dụng'
+    ]
+  },
+  {
+    id: 128,
+    title: 'Nước lau sàn Okay Lemongrass can 5 lít',
+    category: 'Nước Lau Sàn',
+    subcategory: 'Okay',
+    slug: 'nuoc-lau-san-okay-lemongrass-can-5-lit',
+    image: '/Product/Okashi/Lemongrass/5000.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước lau sàn Okay Lemongrass can 5 lít mang hương sả dịu nhẹ, giúp khử mùi và xua đuổi côn trùng hiệu quả. Sản phẩm làm sạch nhanh chóng, giữ cho sàn nhà luôn sạch bóng và thoáng mát.',
+    metaDescription: 'Nước lau sàn Okay Lemongrass 5L hương sả dịu nhẹ, khử mùi, xua côn trùng, giúp sàn nhà sạch bóng, thoáng mát suốt ngày dài.',
+    features: [
+      'Hương sả dịu nhẹ',
+      'Khử mùi hiệu quả',
+      'Xua đuổi côn trùng',
+      'Làm sạch nhanh chóng',
+      'Giữ sàn nhà sạch bóng và thoáng mát'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '5 lít' },
+      { label: 'Thương hiệu', value: 'Okay' },
+      { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha 1 nắp (khoảng 30ml) Nước lau sàn Okay với 5 lít nước sạch',
+      'Nhúng cây lau vào dung dịch đã pha, vắt khô vừa phải',
+      'Lau đều bề mặt sàn và lau lại bằng nước sạch',
+      'Đậy kín nắp sau khi sử dụng và bảo quản nơi khô ráo, thoáng mát'
+    ],
+    benefits: [
+      'Làm sạch nhanh chóng',
+      'Khử mùi hiệu quả',
+      'Mang hương sả chanh thanh mát tự nhiên',
+      'Giúp xua đuổi muỗi và côn trùng',
+      'Dung tích lớn cho nhiều lần sử dụng'
+    ]
+  },
+  {
+    id: 129,
+    title: 'Nước lau sàn Okay Lavender can 5 lít',
+    category: 'Nước Lau Sàn',
+    subcategory: 'Okay',
+    slug: 'nuoc-lau-san-okay-lavender-can-5-lit',
+    image: '/Product/Okashi/Lavender/5000.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước lau sàn Okay Lavender can 5 lít với hương oải hương thư giãn mang lại cảm giác dễ chịu sau mỗi lần lau dọn. Công thức diệt khuẩn và làm sạch mạnh mẽ giúp sàn nhà sáng bóng, sạch sẽ và thơm ngát.',
+    metaDescription: 'Nước lau sàn Okay Lavender 5L hương oải hương thư giãn, làm sạch và diệt khuẩn hiệu quả, mang lại sàn nhà sáng bóng, thơm ngát.',
+    features: [
+      'Hương oải hương thư giãn',
+      'Diệt khuẩn hiệu quả',
+      'Làm sạch mạnh mẽ',
+      'Sàn nhà sáng bóng',
+      'Thơm ngát dài lâu'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '5 lít' },
+      { label: 'Thương hiệu', value: 'Okay' },
+      { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha 1 nắp (khoảng 30ml) Nước lau sàn Okay với 5 lít nước sạch',
+      'Nhúng cây lau vào dung dịch đã pha, vắt khô vừa phải',
+      'Lau đều bề mặt sàn và lau lại bằng nước sạch',
+      'Đậy kín nắp sau khi sử dụng và bảo quản nơi khô ráo, thoáng mát'
+    ],
+    benefits: [
+      'Loại bỏ bụi bẩn, vết ố trên sàn',
+      'Tỏa hương oải hương thư giãn',
+      'Giúp tinh thần thoải mái, dễ chịu',
+      'Diệt khuẩn hiệu quả',
+      'Dung tích lớn tiết kiệm chi phí'
+    ]
+  },
+  {
+    id: 130,
+    title: 'Nước lau sàn Okay Skyblue can 5 lít',
+    category: 'Nước Lau Sàn',
+    subcategory: 'Okay',
+    slug: 'nuoc-lau-san-okay-skyblue-can-5-lit',
+    image: '/Product/Okashi/Skyblue/5000.png',
+    images: [],
+    isNew: false,
+    inStock: true,
+    description: 'Nước lau sàn Okay Skyblue can 5 lít đem đến hương thơm trong lành, tươi mát. Sản phẩm giúp loại bỏ vết bẩn nhanh chóng, diệt khuẩn và giữ cho không gian nhà cửa luôn sạch sẽ, thoáng đãng.',
+    metaDescription: 'Nước lau sàn Okay Skyblue 5L hương thơm trong lành, tươi mát, giúp loại bỏ vết bẩn, diệt khuẩn, giữ không gian luôn sạch sẽ, thoáng đãng.',
+    features: [
+      'Hương thơm trong lành, tươi mát',
+      'Loại bỏ vết bẩn nhanh chóng',
+      'Diệt khuẩn hiệu quả',
+      'Giữ không gian sạch sẽ',
+      'Thoáng đãng'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '5 lít' },
+      { label: 'Thương hiệu', value: 'Okay' },
+      { label: 'Hạn sử dụng', value: '24 tháng từ ngày sản xuất' }
+    ],
+    usage: [
+      'Pha 1 nắp (khoảng 30ml) Nước lau sàn Okay với 5 lít nước sạch',
+      'Nhúng cây lau vào dung dịch đã pha, vắt khô vừa phải',
+      'Lau đều bề mặt sàn và lau lại bằng nước sạch',
+      'Đậy kín nắp sau khi sử dụng và bảo quản nơi khô ráo, thoáng mát'
+    ],
+    benefits: [
+      'Làm sạch vết bẩn và bụi mịn trên sàn',
+      'Đem lại hương thơm mát lành, sảng khoái',
+      'Giữ cho không gian luôn tươi mới',
+      'Diệt khuẩn hiệu quả',
+      'Dung tích lớn cho nhiều lần sử dụng'
+    ]
+  },
+  {
+    id: 131,
+    title: 'Túi thơm Hygiene Pink Sweet gói 8g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Túi thơm Hygiene',
+    slug: 'tui-thom-hygiene-pink-sweet-goi-8g',
+    image: '/Product/Tui_thom_Hygiene/Pink_Sweet.png',
+    images: [],
+    description: 'Túi thơm Hygiene Pink Sweet sở hữu hương hoa thơm ngọt ngào và nữ tính giúp mang lại cảm giác dễ chịu cho không gian sống. Sản phẩm thích hợp đặt trong tủ quần áo, ngăn kéo, túi xách hoặc xe hơi, giúp khử mùi và lưu hương bền lâu lên đến 8 tuần.',
+    metaDescription: 'Túi thơm Hygiene Pink Sweet mang hương hoa thơm ngọt ngào và nữ tính giúp mang lại cảm giác dễ chịu và lưu hương lâu lên đến 8 tuần.',
+    features: [
+      'Túi thơm Hygiene Pink Sweet giúp lưu giữ mùi thơm trong hơn 8 tuần, và loại bỏ mùi hôi. Có thể treo hoặc đặt trong khu vực bạn muốn, chẳng hạn như tủ quần áo, xe hơi hoặc phòng tắm.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Trọng lượng', value: '8g' },
+      { label: 'Sử dụng cho', value: 'Tủ quần áo, xe hơi, nhà tắm, tủ đồ' }
+    ],
+    usage: [
+      'Xé bao bì bên ngoài, lấy túi thơm ra và treo vào khu vực mình mong muốn',
+      'Để có độ thơm liên tục nên thay túi sau mỗi 8 tuần sử dụng'
+    ],
+    benefits: [
+      'Khử mùi hiệu quả, lưu hương lâu đến 12 tuần',
+      'Mang lại không gian thơm mát, dễ chịu mọi lúc mọi nơi'
+    ],
+    isNew: true,
+    inStock: true
+  },
+  {
+    id: 132,
+    title: 'Túi thơm Hygiene Sunrise Kiss gói 8g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Túi thơm Hygiene',
+    slug: 'tui-thom-hygiene-sunrise-kiss-goi-8g',
+    image: '/Product/Tui_thom_Hygiene/Sunrise_Kiss.png',
+    images: [],
+    description: 'Túi thơm Hygiene Sunrise Kiss mang hương thơm hoa hồng Damask, giúp không gian luôn thơm mát như buổi sớm mai. Sản phẩm thích hợp đặt trong tủ quần áo, ngăn kéo, túi xách hoặc xe hơi, giúp khử mùi và lưu hương bền lâu lên đến 12 tuần.',
+    metaDescription: 'Túi thơm Hygiene Sunrise Kiss mang hương hoa tươi ngọt ngào, lưu hương đến 12 tuần và khử mùi hiệu quả.',
+    features: [
+      'Túi thơm Hygiene Sunrise Kiss giúp lưu giữ mùi thơm trong hơn 8 tuần, và loại bỏ mùi hôi. Có thể treo hoặc đặt trong khu vực bạn muốn, chẳng hạn như tủ quần áo, xe hơi hoặc phòng tắm.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Trọng lượng', value: '8g' },
+      { label: 'Sử dụng cho', value: 'Tủ quần áo, xe hơi, nhà tắm, tủ đồ' }
+    ],
+    usage: [
+      'Xé bao bì bên ngoài, lấy túi thơm ra và treo vào khu vực mình mong muốn',
+      'Để có độ thơm liên tục nên thay túi sau mỗi 8 tuần sử dụng'
+    ],
+    benefits: [
+      'Hương thơm hoa hồng Damask tinh tế',
+      'Lưu hương bền lâu lên đến 12 tuần',
+      'Khử mùi hiệu quả'
+    ],
+    isNew: true,
+    inStock: true
+  },
+  {
+    id: 133,
+    title: 'Túi thơm Hygiene Peony Bloom gói 8g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Túi thơm Hygiene',
+    slug: 'tui-thom-hygiene-peony-bloom-goi-8g',
+    image: '/Product/Tui_thom_Hygiene/Peony_Bloom.png',
+    images: [],
+    description: 'Túi thơm Hygiene Peony Bloom mang đến hương hoa mẫu đơn thanh lịch và sang trọng, mang lại không gian dễ chịu, thư giãn và nhẹ nhàng. Sản phẩm thích hợp đặt trong tủ quần áo, ngăn kéo, túi xách hoặc xe hơi, giúp khử mùi và lưu hương bền lâu lên đến 12 tuần.',
+    metaDescription: 'Túi thơm Hygiene Peony Bloom mang đến hương hoa mẫu đơn thanh lịch và sang trọng. Sản phẩm lưu hương bền lâu lên đến 12 tuần.',
+    features: [
+      'Túi thơm Hygien Peony Bloom giúp lưu giữ mùi thơm trong hơn 8 tuần, và loại bỏ mùi hôi. Có thể treo hoặc đặt trong khu vực bạn muốn, chẳng hạn như tủ quần áo, xe hơi hoặc phòng tắm.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Trọng lượng', value: '8g' },
+      { label: 'Sử dụng cho', value: 'Tủ quần áo, xe hơi, nhà tắm, tủ đồ' }
+    ],
+    usage: [
+      'Xé bao bì bên ngoài, lấy túi thơm ra và treo vào khu vực mình mong muốn',
+      'Để có độ thơm liên tục nên thay túi sau mỗi 8 tuần sử dụng'
+    ],
+    benefits: [
+      'Hương hoa mẫu đơn thanh lịch và sang trọng',
+      'Mang lại không gian thư giãn, nhẹ nhàng',
+      'Lưu hương bền lâu'
+    ],
+    isNew: true,
+    inStock: true
+  },
+  {
+    id: 134,
+    title: 'Túi thơm Hygiene Blue Fresh gói 8g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Túi thơm Hygiene',
+    slug: 'tui-thom-hygiene-blue-fresh-goi-8g',
+    image: '/Product/Tui_thom_Hygiene/Blue_Fresh.png',
+    images: [],
+    description: 'Túi thơm Hygiene Blue Fresh mang hương thơm dịu nhẹ, tươi mát gợi lên cảm giác mát mẻ. Sản phẩm thích hợp đặt trong tủ quần áo, ngăn kéo, túi xách hoặc xe hơi, giúp khử mùi và lưu hương bền lâu lên đến 8 tuần.',
+    metaDescription: 'Túi thơm Hygiene Blue Fresh mang hương thơm dịu nhẹ, tươi mát và lưu hương bền lâu lên đến 8 tuần.',
+    features: [
+      'Túi thơm Hygiene Blue Fresh giúp lưu giữ mùi thơm trong hơn 8 tuần, và loại bỏ mùi hôi. Có thể treo hoặc đặt trong khu vực bạn muốn, chẳng hạn như tủ quần áo, xe hơi hoặc phòng tắm.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Trọng lượng', value: '8g' },
+      { label: 'Sử dụng cho', value: 'Tủ quần áo, xe hơi, nhà tắm, tủ đồ' }
+    ],
+    usage: [
+      'Xé bao bì bên ngoài, lấy túi thơm ra và treo vào khu vực mình mong muốn',
+      'Để có độ thơm liên tục nên thay túi sau mỗi 8 tuần sử dụng'
+    ],
+    benefits: [
+      'Hương thơm dịu nhẹ, tươi mát',
+      'Gợi cảm giác mát mẻ',
+      'Khử mùi hiệu quả'
+    ],
+    isNew: true,
+    inStock: true
+  },
+  {
+    id: 135,
+    title: 'Túi thơm Hygiene Sunkiss Blooming gói 8g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Túi thơm Hygiene',
+    slug: 'tui-thom-hygiene-sunkiss-blooming-goi-8g',
+    image: '/Product/Tui_thom_Hygiene/Sunkiss_Blooming.png',
+    images: [],
+    description: 'Túi thơm Hygiene Sunkiss Blooming tỏa hương hoa rực rỡ và ngọt ngào, mang lại cảm giác dễ chịu cho không gian sống. Sản phẩm thích hợp đặt trong tủ quần áo, ngăn kéo, túi xách hoặc xe hơi, giúp khử mùi và lưu hương bền lâu lên đến 12 tuần.',
+    metaDescription: 'Túi thơm Hygiene Sunkiss Blooming tỏa hương hoa rực rỡ và ngọt ngào và lưu hương bền lâu lên đến 12 tuần.',
+    features: [
+      'Túi thơm Hygiene Sunkiss Blooming giúp lưu giữ mùi thơm trong hơn 8 tuần, và loại bỏ mùi hôi. Có thể treo hoặc đặt trong khu vực bạn muốn, chẳng hạn như tủ quần áo, xe hơi hoặc phòng tắm.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Trọng lượng', value: '8g' },
+      { label: 'Sử dụng cho', value: 'Tủ quần áo, xe hơi, nhà tắm, tủ đồ' }
+    ],
+    usage: [
+      'Xé bao bì bên ngoài, lấy túi thơm ra và treo vào khu vực mình mong muốn',
+      'Để có độ thơm liên tục nên thay túi sau mỗi 8 tuần sử dụng'
+    ],
+    benefits: [
+      'Hương hoa rực rỡ và ngọt ngào',
+      'Mang lại cảm giác dễ chịu',
+      'Lưu hương bền lâu'
+    ],
+    isNew: true,
+    inStock: true
+  },
+  {
+    id: 136,
+    title: 'Túi thơm Hygiene Blooming Touch gói 8g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Túi thơm Hygiene',
+    slug: 'tui-thom-hygiene-blooming-touch-goi-8g',
+    image: '/Product/Tui_thom_Hygiene/Blooming_Touch.png',
+    images: [],
+    description: 'Túi thơm Hygiene Blooming Touch mang hương sữa ngọt ngào kết hợp cùng hương hoa mẫu đơn tạo cảm giác ấm áp và dễ chịu cho không gian sống. Sản phẩm thích hợp đặt trong tủ quần áo, ngăn kéo, túi xách hoặc xe hơi, giúp khử mùi và lưu hương bền lâu lên đến 12 tuần.',
+    metaDescription: 'Túi thơm Hygiene Blooming Touch mang hương sữa ngọt ngào kết hợp hương hoa mẫu đơn. Sản phẩm lưu hương bền lâu lên đến 12 tuần.',
+    features: [
+      'Túi thơm Hygiene Blooming Touch giúp lưu giữ mùi thơm trong hơn 8 tuần, và loại bỏ mùi hôi. Có thể treo hoặc đặt trong khu vực bạn muốn, chẳng hạn như tủ quần áo, xe hơi hoặc phòng tắm.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Trọng lượng', value: '8g' },
+      { label: 'Sử dụng cho', value: 'Tủ quần áo, xe hơi, nhà tắm, tủ đồ' }
+    ],
+    usage: [
+      'Xé bao bì bên ngoài, lấy túi thơm ra và treo vào khu vực mình mong muốn',
+      'Để có độ thơm liên tục nên thay túi sau mỗi 8 tuần sử dụng'
+    ],
+    benefits: [
+      'Hương sữa ngọt ngào kết hợp hương hoa mẫu đơn',
+      'Tạo cảm giác ấm áp và dễ chịu',
+      'Lưu hương bền lâu'
+    ],
+    isNew: true,
+    inStock: true
+  },
+  {
+    id: 137,
+    title: 'Túi thơm Hygiene Violet Soft gói 8g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Túi thơm Hygiene',
+    slug: 'tui-thom-hygiene-violet-soft-goi-8g',
+    image: '/Product/Tui_thom_Hygiene/Violet_Soft.png',
+    images: [],
+    description: 'Túi thơm Hygiene Violet Soft mang hương hoa violet thanh khiết tạo không gian dễ chịu và tươi mát. Sản phẩm thích hợp đặt trong tủ quần áo, ngăn kéo, túi xách hoặc xe hơi, giúp khử mùi và lưu hương bền lâu lên đến 8 tuần.',
+    metaDescription: 'Túi thơm Hygiene Violet Soft mang hương hoa violet thanh khiết tạo không gian dễ chịu và tươi mát. Sản phẩm lưu hương bền lâu lên đến 8 tuần.',
+    features: [
+      'Túi thơm Hygiene Violet Soft giúp lưu giữ mùi thơm trong hơn 8 tuần, và loại bỏ mùi hôi. Có thể treo hoặc đặt trong khu vực bạn muốn, chẳng hạn như tủ quần áo, xe hơi hoặc phòng tắm.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Trọng lượng', value: '8g' },
+      { label: 'Sử dụng cho', value: 'Tủ quần áo, xe hơi, nhà tắm, tủ đồ' }
+    ],
+    usage: [
+      'Xé bao bì bên ngoài, lấy túi thơm ra và treo vào khu vực mình mong muốn',
+      'Để có độ thơm liên tục nên thay túi sau mỗi 8 tuần sử dụng'
+    ],
+    benefits: [
+      'Hương hoa violet thanh khiết',
+      'Tạo không gian dễ chịu và tươi mát',
+      'Khử mùi hiệu quả'
+    ],
+    isNew: true,
+    inStock: true
+  },
+  {
+    id: 138,
+    title: 'Túi thơm Hygiene Happy Sunshine gói 8g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Túi thơm Hygiene',
+    slug: 'tui-thom-hygiene-happy-sunshine-goi-8g',
+    image: '/Product/Tui_thom_Hygiene/Happy_Sunshine.png',
+    images: [],
+    description: 'Túi thơm Hygiene Happy Sunshine mang mùi hương của ánh nắng hạnh phúc giúp không gian ấm áp và thư giãn. Sản phẩm thích hợp đặt trong tủ quần áo, ngăn kéo, túi xách hoặc xe hơi, giúp khử mùi và lưu hương bền lâu lên đến 12 tuần.',
+    metaDescription: 'Túi thơm Hygiene Happy Sunshine mang mùi hương của ánh nắng hạnh phúc. Sản phẩm lưu hương bền lâu lên đến 12 tuần.',
+    features: [
+      'Túi thơm Hygiene Happy Sunshine giúp lưu giữ mùi thơm trong hơn 8 tuần, và loại bỏ mùi hôi. Có thể treo hoặc đặt trong khu vực bạn muốn, chẳng hạn như tủ quần áo, xe hơi hoặc phòng tắm.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Trọng lượng', value: '8g' },
+      { label: 'Sử dụng cho', value: 'Tủ quần áo, xe hơi, nhà tắm, tủ đồ' }
+    ],
+    usage: [
+      'Xé bao bì bên ngoài, lấy túi thơm ra và treo vào khu vực mình mong muốn',
+      'Để có độ thơm liên tục nên thay túi sau mỗi 8 tuần sử dụng'
+    ],
+    benefits: [
+      'Mùi hương của ánh nắng hạnh phúc',
+      'Giúp không gian ấm áp và thư giãn',
+      'Lưu hương bền lâu'
+    ],
+    isNew: true,
+    inStock: true
+  },
+  {
+    id: 139,
+    title: 'Túi thơm Hygiene Lovely Bloom gói 8g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Túi thơm Hygiene',
+    slug: 'tui-thom-hygiene-lovely-bloom-goi-8g',
+    image: '/Product/Tui_thom_Hygiene/Lovely_Bloom.png',
+    images: [],
+    description: 'Túi thơm Hygiene Lovely Bloom mang đến sự kết hợp tinh tế giữa hương hoa ngọt ngào và trái cây mọng nước, tạo nên mùi hương tươi mới và quyến rũ. Sản phẩm thích hợp đặt trong tủ quần áo, ngăn kéo, túi xách hoặc xe hơi, giúp khử mùi và lưu hương bền lâu lên đến 12 tuần.',
+    metaDescription: 'Túi thơm Hygiene Lovely Bloom với hương hoa và trái cây tươi mát, lưu hương đến 12 tuần, giúp khử mùi hiệu quả và mang lại không gian thơm ngát, dễ chịu mỗi ngày.',
+    features: [
+      'Túi thơm Hygiene Lovely Bloom giúp lưu giữ mùi thơm trong hơn 8 tuần, và loại bỏ mùi hôi. Có thể treo hoặc đặt trong khu vực bạn muốn, chẳng hạn như tủ quần áo, xe hơi hoặc phòng tắm.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Trọng lượng', value: '8g' },
+      { label: 'Sử dụng cho', value: 'Tủ quần áo, xe hơi, nhà tắm, tủ đồ' }
+    ],
+    usage: [
+      'Xé bao bì bên ngoài, lấy túi thơm ra và treo vào khu vực mình mong muốn',
+      'Để có độ thơm liên tục nên thay túi sau mỗi 8 tuần sử dụng'
+    ],
+    benefits: [
+      'Kết hợp hương hoa ngọt ngào và trái cây mọng nước',
+      'Mùi hương tươi mới và quyến rũ',
+      'Khử mùi hiệu quả'
+    ],
+    isNew: true,
+    inStock: true
+  },
+  {
+    id: 140,
+    title: 'Cốc Thả Bồn Cầu Hàn Quốc Hương Hoa 180g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Cốc thả bồn cầu Hàn Quốc',
+    slug: 'coc-tha-bon-cau-han-quoc-huong-hoa-180g',
+    image: '/Product/Coc_tha_bon_cau.png',
+    images: [],
+    description: 'Cốc thả bồn cầu Hàn Quốc hương hoa 180g mang lại không gian nhà vệ sinh luôn thơm mát và dễ chịu, giúp khử mùi hiệu quả và lưu hương dài lâu. Với hương hoa thơm ngát, sản phẩm không chỉ làm sạch bồn cầu mà còn mang đến cảm giác sảng khoái, dễ chịu mỗi lần sử dụng.',
+    metaDescription: 'Cốc thả bồn cầu Hàn Quốc hương hoa 180g mang lại không gian nhà vệ sinh luôn thơm mát, giúp khử mùi hiệu quả và lưu hương dài lâu.',
+    features: [
+      'Khử trùng, khử mùi, sạch, sang trọng, duy trì độ sáng của gốm, chống ăn mòn, không cần cọ rửa, không gây xước men, tẩy sạch các vết bẩn bám trong thành kẽ của xí bệt. Tiêu diệt tận gốc vi khuẩn có hại.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Khối lượng', value: '180g' },
+      { label: 'Sử dụng cho', value: 'Bồn cầu, bệ vệ sinh, bồn rửa mặt, các loại đồ gia dụng, nội thất bằng gốm' }
+    ],
+    usage: [
+      'Mở nắp chai và điều chỉnh độ màu sắc của nước với núm xoay thông minh.',
+      'Mở nắp bồn chứa nước, xả hết nước trong bồn.',
+      'Đợi lượng nước trong bồn rút hết, thả nguyên cả chai vào góc bồn nước ở vị trí xa van xả. Sau khoảng 10 phút, nước trong bồn sẽ chuyển sang màu xanh nước biển.'
+    ],
+    benefits: [
+      'Không gian nhà vệ sinh thơm mát',
+      'Khử mùi hiệu quả và lưu hương dài lâu',
+      'Làm sạch bồn cầu',
+      'Mang đến cảm giác sảng khoái'
+    ],
+    isNew: true,
+    inStock: true
+  },
+  {
+    id: 141,
+    title: 'Kem đánh răng Median 93% Hàn Quốc Original 120g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Kem đánh răng Median 93%',
+    slug: 'kem-danh-rang-median-93-han-quoc-original-120g',
+    image: '/Product/Median/Original.png',
+    images: [],
+    description: 'Kem đánh răng Median 93% Hàn Quốc Original 120g mang hương bạc hà dịu mát, giúp hơi thở luôn sảng khoái và dễ chịu. Công thức làm sạch chuyên sâu hỗ trợ loại bỏ mảng bám, ngăn ngừa sâu răng và viêm nướu hiệu quả.',
+    metaDescription: 'Kem đánh răng Median 93% Hàn Quốc Original 120g với bạc hà dịu mát, sạch mảng bám, ngừa sâu răng và viêm nướu.',
+    features: [
+      'Kem đánh răng Median 93% Hàn Quốc Original 120g là sản phẩm được chuyên gia khuyên dùng để chăm sóc răng miệng với khả năng loại bỏ sạch mảng bám, ngăn ngừa cao răng, hỗ trợ làm trắng răng, bảo vệ vùng nướu. Đây là sản phẩm kem đánh răng bán chạy số 1 tại Hàn Quốc và đang được thị trường châu Á ưa chuộng.',
+      'Giúp chải sạch răng, loại bỏ mảng bám, thức ăn thừa, giúp răng miệng được sạch sẽ',
+      'Ngăn ngừa mảng bám, cao răng, các vi khuẩn gây mùi',
+      'Bảo vệ nướu và làm chắc răng',
+      'Chứa các thành phần giúp hỗ trợ răng trắng sáng và giảm ố vàng',
+      'Chống viêm lợi và giảm ê buốt răng',
+      'Loại bỏ mùi hôi miệng bằng hương bạc hà/trà xanh/hương chanh the mát cực kỳ dễ chịu, sảng khoái.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Khối lượng', value: '120g' },
+      { label: 'Sử dụng cho', value: 'Người lớn, trẻ em trên 13 tuổi, người bị hôi miệng do hút thuốc, uống rượu bia,…' }
+    ],
+    usage: [
+      'Dùng một lượng nhỏ kem đánh răng Median Hàn Quốc lên bàn chải, sau đó chải sạch răng và nướu trong vòng 2-3 phút, súc miệng thật sạch với nước.',
+      'Dùng ít nhất 2 lần mỗi ngày'
+    ],
+    benefits: [
+      'Hương bạc hà dịu mát',
+      'Hơi thở sảng khoái',
+      'Loại bỏ mảng bám, ngăn ngừa sâu răng',
+      'Bảo vệ nướu hiệu quả'
+    ],
+    isNew: true,
+    inStock: true
+  },
+  {
+    id: 142,
+    title: 'Kem đánh răng Median 93% Hàn Quốc Max Fresh 120g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Kem đánh răng Median 93%',
+    slug: 'kem-danh-rang-median-93-han-quoc-max-fresh-120g',
+    image: '/Product/Median/Max_Fresh.png',
+    images: [],
+    description: 'Kem đánh răng Median 93% Hàn Quốc Max Fresh 120g hương bạc hà đem lại cảm giác sảng khoái sau khi chải răng. Thành phần làm sạch mạnh mẽ giúp loại bỏ vi khuẩn và mảng bám, bảo vệ răng miệng toàn diện.',
+    metaDescription: 'Kem đánh răng Median 93% Hàn Quốc Max Fresh 120g tươi mát tối đa, sạch vi khuẩn và mảng bám, bảo vệ răng miệng khỏe mạnh và thơm lâu.',
+    features: [
+      'Kem đánh răng Median 93% Hàn Quốc Max Fresh 120g là sản phẩm được chuyên gia khuyên dùng để chăm sóc răng miệng với khả năng loại bỏ sạch mảng bám, ngăn ngừa cao răng, hỗ trợ làm trắng răng, bảo vệ vùng nướu. Đây là sản phẩm kem đánh răng bán chạy số 1 tại Hàn Quốc và đang được thị trường châu Á ưa chuộng.',
+      'Giúp chải sạch răng, loại bỏ mảng bám, thức ăn thừa, giúp răng miệng được sạch sẽ',
+      'Ngăn ngừa mảng bám, cao răng, các vi khuẩn gây mùi',
+      'Bảo vệ nướu và làm chắc răng',
+      'Chứa các thành phần giúp hỗ trợ răng trắng sáng và giảm ố vàng',
+      'Chống viêm lợi và giảm ê buốt răng',
+      'Loại bỏ mùi hôi miệng bằng hương bạc hà/trà xanh/hương chanh the mát cực kỳ dễ chịu, sảng khoái.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Khối lượng', value: '120g' },
+      { label: 'Sử dụng cho', value: 'Người lớn, trẻ em trên 13 tuổi, người bị hôi miệng do hút thuốc, uống rượu bia,…' }
+    ],
+    usage: [
+      'Dùng một lượng nhỏ kem đánh răng Median Hàn Quốc lên bàn chải, sau đó chải sạch răng và nướu trong vòng 2-3 phút, súc miệng thật sạch với nước.',
+      'Dùng ít nhất 2 lần mỗi ngày'
+    ],
+    benefits: [
+      'Hương bạc hà sảng khoái',
+      'Thành phần làm sạch mạnh mẽ',
+      'Loại bỏ vi khuẩn và mảng bám',
+      'Bảo vệ răng miệng toàn diện'
+    ],
+    isNew: true,
+    inStock: true
+  },
+  {
+    id: 143,
+    title: 'Kem đánh răng Median 93% Hàn Quốc White 120g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Kem đánh răng Median 93%',
+    slug: 'kem-danh-rang-median-93-han-quoc-white-120g',
+    image: '/Product/Median/White.png',
+    images: [],
+    description: 'Kem đánh răng Median 93% Hàn Quốc White 120g tập trung vào khả năng làm sáng, hỗ trợ loại bỏ vết ố và cao răng. Công thức dịu nhẹ kết hợp hương thơm tươi mát mang lại sự tự tin và cảm giác sạch sẽ sau mỗi lần sử dụng.',
+    metaDescription: 'Kem đánh răng Median 93% Hàn Quốc White 120g giúp răng trắng sáng tự nhiên, loại bỏ vết ố và cao răng, hương thơm tươi mát cho nụ cười rạng rỡ.',
+    features: [
+      'Kem đánh răng Median 93% Hàn Quốc White 120g là sản phẩm được chuyên gia khuyên dùng để chăm sóc răng miệng với khả năng loại bỏ sạch mảng bám, ngăn ngừa cao răng, hỗ trợ làm trắng răng, bảo vệ vùng nướu. Đây là sản phẩm kem đánh răng bán chạy số 1 tại Hàn Quốc và đang được thị trường châu Á ưa chuộng.',
+      'Giúp chải sạch răng, loại bỏ mảng bám, thức ăn thừa, giúp răng miệng được sạch sẽ',
+      'Ngăn ngừa mảng bám, cao răng, các vi khuẩn gây mùi',
+      'Bảo vệ nướu và làm chắc răng',
+      'Chứa các thành phần giúp hỗ trợ răng trắng sáng và giảm ố vàng',
+      'Chống viêm lợi và giảm ê buốt răng',
+      'Loại bỏ mùi hôi miệng bằng hương bạc hà/trà xanh/hương chanh the mát cực kỳ dễ chịu, sảng khoái.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Khối lượng', value: '120g' },
+      { label: 'Sử dụng cho', value: 'Người lớn, trẻ em trên 13 tuổi, người bị hôi miệng do hút thuốc, uống rượu bia,…' }
+    ],
+    usage: [
+      'Dùng một lượng nhỏ kem đánh răng Median Hàn Quốc lên bàn chải, sau đó chải sạch răng và nướu trong vòng 2-3 phút, súc miệng thật sạch với nước.',
+      'Dùng ít nhất 2 lần mỗi ngày'
+    ],
+    benefits: [
+      'Làm sáng răng tự nhiên',
+      'Loại bỏ vết ố và cao răng',
+      'Công thức dịu nhẹ',
+      'Hương thơm tươi mát'
+    ],
+    isNew: true,
+    inStock: true
+  },
+  {
+    id: 144,
+    title: 'Kem đánh răng Median 93% Hàn Quốc Gum 120g',
+    category: 'Mặt Hàng Khác',
+    subcategory: 'Kem đánh răng Median 93%',
+    slug: 'kem-danh-rang-median-93-han-quoc-gum-120g',
+    image: '/Product/Median/Gum.png',
+    images: [],
+    description: 'Kem đánh răng Median 93% Hàn Quốc Gum 120g chăm sóc và bảo vệ nướu, giúp giảm sưng đỏ và phòng ngừa viêm nướu hiệu quả. Kết cấu dịu nhẹ nhưng vẫn đảm bảo làm sạch sâu, loại bỏ mảng bám gây hại.',
+    metaDescription: 'Kem đánh răng Median 93% Hàn Quốc Gum 120g giúp chăm sóc nướu khỏe, giảm sưng đỏ, làm sạch sâu và ngăn viêm nướu hiệu quả.',
+    features: [
+      'Kem đánh răng Median 93% Hàn Quốc Gum 120g là sản phẩm được chuyên gia khuyên dùng để chăm sóc răng miệng với khả năng loại bỏ sạch mảng bám, ngăn ngừa cao răng, hỗ trợ làm trắng răng, bảo vệ vùng nướu. Đây là sản phẩm kem đánh răng bán chạy số 1 tại Hàn Quốc và đang được thị trường châu Á ưa chuộng.',
+      'Giúp chải sạch răng, loại bỏ mảng bám, thức ăn thừa, giúp răng miệng được sạch sẽ',
+      'Ngăn ngừa mảng bám, cao răng, các vi khuẩn gây mùi',
+      'Bảo vệ nướu và làm chắc răng',
+      'Chứa các thành phần giúp hỗ trợ răng trắng sáng và giảm ố vàng',
+      'Chống viêm lợi và giảm ê buốt răng',
+      'Loại bỏ mùi hôi miệng bằng hương bạc hà/trà xanh/hương chanh the mát cực kỳ dễ chịu, sảng khoái.'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Khối lượng', value: '120g' },
+      { label: 'Sử dụng cho', value: 'Người lớn, trẻ em trên 13 tuổi, người bị hôi miệng do hút thuốc, uống rượu bia,…' }
+    ],
+    usage: [
+      'Dùng một lượng nhỏ kem đánh răng Median Hàn Quốc lên bàn chải, sau đó chải sạch răng và nướu trong vòng 2-3 phút, súc miệng thật sạch với nước.',
+      'Dùng ít nhất 2 lần mỗi ngày'
+    ],
+    benefits: [
+      'Chăm sóc và bảo vệ nướu',
+      'Giảm sưng đỏ và phòng ngừa viêm nướu',
+      'Làm sạch sâu, loại bỏ mảng bám',
+      'Kết cấu dịu nhẹ'
+    ],
+    isNew: true,
+    inStock: true
+  },
+
+  {
+    id: 145,
+    title: 'Nước giặt Hygiene Expert Wash Sweet Blossom Thái Lan can 2800ml',
+    category: 'Nước Giặt',
+    subcategory: 'Hygiene',
+    slug: 'nc-git-hygiene-expert-wash-sweet-blossom-thi-lan-can-2800ml',
+    image: '/Product/Nưoc_giat_Hygiene/2800_Sweet_Blossom.png',
+    images: [],
+    isNew: true,
+    inStock: true,
+    description: 'Nước giặt Hygiene Expert Wash Sweet Blossom Thái Lan can 2800ml mang hương hoa ngọt ngào, lôi cuốn và lưu hương dài lâu trong từng chuyển động. Với các phân tử làm sạch hoạt tính, sản phẩm giúp loại bỏ vết bẩn cứng đầu đồng thời khử mùi ẩm mốc hiệu quả.',
+    metaDescription: 'Nước giặt Hygiene Expert Wash Sweet Blossom Thái Lan 2800ml mang hương hoa ngọt ngào, lưu hương bền lâu. Công thức hoạt tính giúp đánh bay vết bẩn cứng đầu và khử mùi ẩm mốc hiệu quả.',
+    features: [
+      'Khử mùi ẩm mốc, mùi bụi bẩn,… đánh bật các vết bẩn cứng đầu khỏi sợi vải',
+      'Ngăn cản chất bẩn bám trở lại quần áo trong khi giặt',
+      'Giúp quần áo trắng sạch mềm mại',
+      'Lưu lại hương thơm của cánh đồng hoa tươi mát cho quần áo của cả gia đình bạn',
+      'Bảo vệ vải sợi được bền màu'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '2800ml' }
+    ],
+    usage: [
+      'Hòa tan kỹ nước giặt Hygiene với nước trước khi cho quần áo vào nước với tỷ lệ 1 nắp đầy hòa với 3 – 4 lít nước',
+      'Ngâm quần áo trong 5 phút, vò nhẹ, xả qua với nước',
+      'Đối với máy giặt theo tỷ lệ 4 – 6 cho 1 lần giặt'
+    ],
+    benefits: [
+      'Khử mùi ẩm mốc hiệu quả',
+      'Loại bỏ vết bẩn cứng đầu',
+      'Quần áo trắng sạch mềm mại',
+      'Hương thơm bền lâu',
+      'Bảo vệ màu vải'
+    ]
+  },
+
+  {
+    id: 146,
+    title: 'Nước giặt Hygiene Expert Wash Sunkiss Blooming Thái Lan can 2800ml',
+    category: 'Nước Giặt',
+    subcategory: 'Hygiene',
+    slug: 'nc-git-hygiene-expert-wash-sunkiss-blooming-thi-lan-can-2800ml',
+    image: '/Product/Nưoc_giat_Hygiene/2800_Sunkiss_Blooming.png',
+    images: [],
+    isNew: true,
+    inStock: true,
+    description: 'Nước giặt Hygiene Expert Wash Sunkiss Blooming Thái Lan can 2800ml lấy cảm hứng từ ánh nắng ban mai ấm áp và hương hoa rực rỡ. Nhờ công nghệ Active Scent Flip, quần áo không chỉ được giữ màu tươi mới mà còn khử sạch mùi ẩm mốc khó chịu. Mỗi cử động đều làm lan tỏa hương thơm rạng rỡ, cho bạn tự tin tỏa sáng cả ngày.',
+    metaDescription: 'Nước giặt Hygiene Expert Wash Sunkiss Blooming Thái Lan 2800ml mang hương hoa rực rỡ, tươi sáng. Công nghệ Active Scent Flip giúp quần áo giữ màu bền đẹp, khử mùi ẩm mốc và lan tỏa hương thơm rạng rỡ suốt ngày dài.',
+    features: [
+      'Khử mùi ẩm mốc, mùi bụi bẩn,… đánh bật các vết bẩn cứng đầu khỏi sợi vải',
+      'Ngăn cản chất bẩn bám trở lại quần áo trong khi giặt',
+      'Giúp quần áo trắng sạch mềm mại',
+      'Lưu lại hương thơm của cánh đồng hoa tươi mát cho quần áo của cả gia đình bạn',
+      'Bảo vệ vải sợi được bền màu'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '2800ml' }
+    ],
+    usage: [
+      'Hòa tan kỹ nước giặt Hygiene với nước trước khi cho quần áo vào nước với tỷ lệ 1 nắp đầy hòa với 3 – 4 lít nước',
+      'Ngâm quần áo trong 5 phút, vò nhẹ, xả qua với nước',
+      'Đối với máy giặt theo tỷ lệ 4 – 6 cho 1 lần giặt'
+    ],
+    benefits: [
+      'Công nghệ Active Scent Flip giữ màu quần áo',
+      'Khử mùi ẩm mốc khó chịu',
+      'Lan tỏa hương thơm rạng rỡ',
+      'Quần áo tươi mới suốt ngày',
+      'Tự tin tỏa sáng'
+    ]
+  },
+
+  {
+    id: 147,
+    title: 'Nước giặt Hygiene Expert Wash Blooming Fresh Thái Lan can 2800ml',
+    category: 'Nước Giặt',
+    subcategory: 'Hygiene',
+    slug: 'nc-git-hygiene-expert-wash-blooming-fresh-thi-lan-can-2800ml',
+    image: '/Product/Nưoc_giat_Hygiene/2800_Blooming_Fresh.png',
+    images: [],
+    isNew: true,
+    inStock: true,
+    description: 'Nước giặt Hygiene Expert Wash Blooming Fresh Thái Lan can 2800ml mang đến làn hương hoa tươi mát, sảng khoái như một ngày trời trong xanh buổi sáng. Với các phân tử làm sạch hoạt tính, sản phẩm giúp loại bỏ vết bẩn cứng đầu đồng thời khử mùi ẩm mốc hiệu quả.',
+    metaDescription: 'Nước giặt Hygiene Expert Wash Blooming Fresh Thái Lan 2800ml mang hương hoa tươi mát, sảng khoái. Công thức hoạt tính giúp đánh bay vết bẩn cứng đầu, khử mùi ẩm mốc và lưu hương dễ chịu dài lâu.',
+    features: [
+      'Khử mùi ẩm mốc, mùi bụi bẩn,… đánh bật các vết bẩn cứng đầu khỏi sợi vải',
+      'Ngăn cản chất bẩn bám trở lại quần áo trong khi giặt',
+      'Giúp quần áo trắng sạch mềm mại',
+      'Lưu lại hương thơm của cánh đồng hoa tươi mát cho quần áo của cả gia đình bạn',
+      'Bảo vệ vải sợi được bền màu'
+    ],
+    specifications: [
+      { label: 'Xuất xứ', value: 'Thái Lan' },
+      { label: 'Dung tích', value: '2800ml' }
+    ],
+    usage: [
+      'Hòa tan kỹ nước giặt Hygiene với nước trước khi cho quần áo vào nước với tỷ lệ 1 nắp đầy hòa với 3 – 4 lít nước',
+      'Ngâm quần áo trong 5 phút, vò nhẹ, xả qua với nước',
+      'Đối với máy giặt theo tỷ lệ 4 – 6 cho 1 lần giặt'
+    ],
+    benefits: [
+      'Hương hoa tươi mát, sảng khoái',
+      'Loại bỏ vết bẩn cứng đầu',
+      'Khử mùi ẩm mốc hiệu quả',
+      'Quần áo trắng sạch mềm mại',
+      'Lưu hương dễ chịu dài lâu'
+    ]
+  },
+
+  {
+    id: 148,
+    title: 'Nước Giặt Xả Deemee Hương Hoa Diên Vĩ 5000ml',
+    category: 'Nước Giặt',
+    subcategory: 'Deemee',
+    slug: 'nc-git-x-deemee-hng-hoa-din-v-5000ml',
+    image: '/Product/Deemee/Dien_vi.png',
+    images: ['/Product/Deemee/MS_dien_vi.png'],
+    isNew: true,
+    inStock: true,
+    description: 'Nước Giặt Xả Deemee Hương Hoa Diên Vĩ 5000ml với từng giọt hương hoa diên vĩ len lỏi vào sợi vải như một cái ôm dịu dàng giữa khu vườn huyền bí, đánh thức mọi giác quan bằng hương thơm thanh thoát và mê hoặc lan tỏa theo từng chuyển động. Sản phẩm ứng dụng công nghệ lưu hương thông minh từ Thái Lan, giúp giữ mùi thơm bền lâu hơn 24 giờ.',
+    metaDescription: 'Nước giặt xả Deemee Hương Hoa Diên Vĩ 5000ml ứng dụng công nghệ lưu hương Thái Lan, hương thơm thanh thoát, bền lâu hơn 24 giờ.',
+    features: [
+      'Từng giọt hương hoa diên vĩ len lỏi vào sợi vải như một cái ôm dịu dàng giữa khu vườn huyền bí',
+      'Đánh thức mọi giác quan bằng hương thơm thanh thoát và mê hoặc',
+      'Lan tỏa theo từng chuyển động',
+      'Công nghệ lưu hương thông minh từ Thái Lan',
+      'Giữ mùi thơm bền lâu hơn 24 giờ',
+      'Deemee sở hữu công thức đậm đặc, tạo bọt mịn giúp làm sạch vết bẩn dễ dàng',
+      'Với Deemee hương hoa diên vĩ huyền bí, ban sẽ luôn khoác lên mình hương thơm quyến rũ đầy cuốn hút',
+      'Sản phẩm phù hợp với mọi loại vải, an toàn cho giặt tay và giặt máy',
+      'Giúp tiết kiệm thời gian và công sức trong việc giặt giũ hàng ngày'
+    ],
+    specifications: [
+      { label: 'Dung tích', value: '5000ml' },
+      { label: 'Sử dụng cho', value: 'Giặt tay, máy giặt cửa trên và máy giặt cửa trước' }
+    ],
+    usage: [
+      'Giặt máy: 1/ Cho 65ml nước giặt vào máy giặt dùng cho 6–7 Kg quần áo. 2/ Chọn chế độ giặt phù hợp.',
+      'Giặt tay: 1/ Cho 35ml nước giặt hòa tan vào 4–5 L nước cho 8–10 chiếc quần áo. 2/ Vò nhẹ và xả lại với nước sạch.'
+    ],
+    benefits: [
+      'Hương thơm thanh thoát, mê hoặc',
+      'Công nghệ lưu hương thông minh',
+      'Bền mùi hơn 24 giờ',
+      'Làm sạch vết bẩn dễ dàng',
+      'An toàn cho mọi loại vải',
+      'Tiết kiệm thời gian và công sức'
+    ]
   }
+
 ];
 
 // Helper function to get products for homepage (first 16)
@@ -3877,5 +4609,39 @@ export const getHomepageProducts = () => products.slice(0, 16);
 export const getAllProducts = () => products;
 
 // Helper function to get product by slug
-export const getProductBySlug = (slug: string) => 
+export const getProductBySlug = (slug: string) =>
   products.find(product => product.slug === slug);
+
+// Helper function to get category counts dynamically
+export const getCategoryCounts = () => {
+  const categoryCounts: Record<string, number> = {};
+
+  products.forEach(product => {
+    if (categoryCounts[product.category]) {
+      categoryCounts[product.category]++;
+    } else {
+      categoryCounts[product.category] = 1;
+    }
+  });
+
+  return categoryCounts;
+};
+
+// Helper function to get subcategory counts for a specific category
+export const getSubcategoryCounts = (categoryName: string) => {
+  const subcategoryCounts: Record<string, number> = {};
+
+  products
+    .filter(product => product.category === categoryName && product.subcategory)
+    .forEach(product => {
+      if (product.subcategory) {
+        if (subcategoryCounts[product.subcategory]) {
+          subcategoryCounts[product.subcategory]++;
+        } else {
+          subcategoryCounts[product.subcategory] = 1;
+        }
+      }
+    });
+
+  return subcategoryCounts;
+};

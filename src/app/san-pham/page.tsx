@@ -7,7 +7,7 @@ import { useSearchParams } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import { getAllProducts, type Product } from '@/data/products';
+import { getAllProducts, getCategoryCounts, getSubcategoryCounts, type Product } from '@/data/products';
 
 // Memoized Product Card Component for better performance
 const ProductCard = memo(({ product, index }: { product: Product; index: number }) => {
@@ -69,6 +69,8 @@ ProductCard.displayName = 'ProductCard';
 function SanPhamPageContent() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const heroRef = useRef(null);
+  const isHeroInView = useInView(heroRef, { once: true, margin: '-100px' });
   const searchParams = useSearchParams();
   const [selectedCategory, setSelectedCategory] = useState('Tất cả');
   const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
@@ -78,6 +80,18 @@ function SanPhamPageContent() {
   // Dynamic products per page based on device
   const [isMobile, setIsMobile] = useState(false);
   const productsPerPage = isMobile ? 16 : 15;
+
+  // Hero stats for counting animation
+  const heroStats = [
+    { number: '120+', label: 'Sản phẩm' },
+    { number: '15+', label: 'Thương hiệu' },
+    { number: '4700+', label: 'Khách hàng' },
+    { number: '500+', label: 'Nhà phân phối' },
+  ];
+
+  // State for counting animation
+  const [heroCounts, setHeroCounts] = useState<number[]>(heroStats.map(() => 0));
+  const [hasHeroAnimated, setHasHeroAnimated] = useState(false);
 
   // Check if mobile on mount and resize
   useEffect(() => {
@@ -90,54 +104,108 @@ function SanPhamPageContent() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  const categories = useMemo(() => [
-    { 
-      name: 'Tất cả', 
-      count: 124,
-      subcategories: []
-    },
-    { 
-      name: 'Nước Giặt', 
-      count: 31,
-      subcategories: ['Dnee', 'Essence', 'Fineline', 'Hygiene', 'Okashi', 'Deemee']
-    },
-    { 
-      name: 'Nước Xả', 
-      count: 10,
-      subcategories: ['Comfort', 'Downy', 'Essence', 'Hygiene', 'Lenor']
-    },
-    { 
-      name: 'Nước Tẩy Rửa', 
-      count: 4,
-      subcategories: ['Sunlight', 'Toilet Duck', 'Vim', 'Mr. Muscle']
-    },
-    { 
-      name: 'Nước Lau Sàn', 
-      count: 3,
-      subcategories: ['Lipon', 'Kleenso', 'Joy']
-    },
-    { 
-      name: 'Chăm Sóc Da', 
-      count: 14,
-      subcategories: ['Breeze', 'Nivea', 'Clear', 'Lifebuoy', 'Dove', 'Sunsilk', 'Sữa tắm Sofia', 'Sữa tắm Mistine Top Country', 'Algemarin']
-    },
-    { 
-      name: 'Thực Phẩm Thái Lan', 
-      count: 30,
-      subcategories: ['Ticky', 'Magic', 'Rinny', 'Roza', 'Kopiko', 'Amira', 'Jumbo', 'Thai Ship']
-    },
-    { 
-      name: 'Mặt Hàng Khác', 
-      count: 32,
-      subcategories: ['Tẩy quần áo Hygiene', 'Kem đánh răng Median 93%', 'Bột giặt Pao', 'Túi thơm Hygiene']
-    },
-  ], []);
+  // Function to animate counting
+  const animateHeroCount = (targetValue: string, index: number, duration: number = 2000) => {
+    const target = parseInt(targetValue.replace(/[^\d]/g, '')) || 0;
+    const startTime = Date.now();
+    const startValue = 0;
+
+    const updateCount = () => {
+      const now = Date.now();
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      // Easing function for smooth animation
+      const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+      const currentValue = Math.floor(startValue + (target - startValue) * easeOutQuart);
+
+      setHeroCounts(prev => {
+        const newCounts = [...prev];
+        newCounts[index] = currentValue;
+        return newCounts;
+      });
+
+      if (progress < 1) {
+        requestAnimationFrame(updateCount);
+      }
+    };
+
+    updateCount();
+  };
+
+  // Trigger animation when hero section comes into view
+  useEffect(() => {
+    if (isHeroInView && !hasHeroAnimated) {
+      setHasHeroAnimated(true);
+      heroStats.forEach((stat, index) => {
+        setTimeout(() => {
+          animateHeroCount(stat.number, index);
+        }, index * 200); // Stagger the animations
+      });
+    }
+  }, [isHeroInView, hasHeroAnimated]);
+
+  // Get all products from shared data source
+  const products = useMemo(() => getAllProducts(), []);
+
+  const categories = useMemo(() => {
+    const categoryCounts = getCategoryCounts();
+    const totalProducts = products.length;
+
+    return [
+      {
+        name: 'Tất cả',
+        count: totalProducts,
+        subcategories: []
+      },
+      {
+        name: 'Nước Giặt',
+        count: categoryCounts['Nước Giặt'] || 0,
+        subcategories: Object.keys(getSubcategoryCounts('Nước Giặt')).sort()
+      },
+      {
+        name: 'Nước Xả',
+        count: categoryCounts['Nước Xả'] || 0,
+        subcategories: Object.keys(getSubcategoryCounts('Nước Xả')).sort()
+      },
+      {
+        name: 'Nước Tẩy Rửa',
+        count: categoryCounts['Nước Tẩy Rửa'] || 0,
+        subcategories: Object.keys(getSubcategoryCounts('Nước Tẩy Rửa')).sort()
+      },
+      {
+        name: 'Nước Lau Sàn',
+        count: categoryCounts['Nước Lau Sàn'] || 0,
+        subcategories: Object.keys(getSubcategoryCounts('Nước Lau Sàn')).sort()
+      },
+      {
+        name: 'Nước Rửa Chén',
+        count: categoryCounts['Nước Rửa Chén'] || 0,
+        subcategories: Object.keys(getSubcategoryCounts('Nước Rửa Chén')).sort()
+      },
+      {
+        name: 'Chăm Sóc Da',
+        count: categoryCounts['Chăm Sóc Da'] || 0,
+        subcategories: Object.keys(getSubcategoryCounts('Chăm Sóc Da')).sort()
+      },
+      {
+        name: 'Thực Phẩm Thái Lan',
+        count: categoryCounts['Thực Phẩm Thái Lan'] || 0,
+        subcategories: Object.keys(getSubcategoryCounts('Thực Phẩm Thái Lan')).sort()
+      },
+      {
+        name: 'Mặt Hàng Khác',
+        count: categoryCounts['Mặt Hàng Khác'] || 0,
+        subcategories: Object.keys(getSubcategoryCounts('Mặt Hàng Khác')).sort()
+      },
+    ];
+  }, [products]);
 
   // Read URL parameters and set initial filters
   useEffect(() => {
     const categoryParam = searchParams.get('category');
     const subcategoryParam = searchParams.get('subcategory');
-    
+
     if (categoryParam) {
       setSelectedCategory(categoryParam);
       // Find and expand the category if it has subcategories
@@ -146,14 +214,11 @@ function SanPhamPageContent() {
         setExpandedCategory(categoryIndex);
       }
     }
-    
+
     if (subcategoryParam) {
       setSelectedSubcategory(subcategoryParam);
     }
   }, [searchParams, categories]);
-
-  // Get all products from shared data source
-  const products = useMemo(() => getAllProducts(), []);
 
   // Filter products based on category, subcategory, and search query
   const filteredProducts = useMemo(() => {
@@ -219,7 +284,7 @@ function SanPhamPageContent() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-br from-[#2e3b63] to-[#1f2a45] text-white">
+      <section ref={heroRef} className="relative pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-br from-[#2e3b63] to-[#1f2a45] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -242,15 +307,10 @@ function SanPhamPageContent() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-8 sm:mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8"
           >
-            {[
-              { number: '124+', label: 'Sản phẩm' },
-              { number: '15+', label: 'Thương hiệu' },
-              { number: '4700+', label: 'Khách hàng' },
-              { number: '500+', label: 'Nhà phân phối' },
-            ].map((stat, index) => (
+            {heroStats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#ca993b] mb-1 sm:mb-2">
-                  {stat.number}
+                  {heroCounts[index]}{stat.number.replace(/^\d+/, '')}
                 </div>
                 <div className="text-xs sm:text-sm md:text-base text-gray-300">{stat.label}</div>
               </div>
